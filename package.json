@@ -15,6 +15,12 @@
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },
+  "devDependencies": {
+    "@tailwindcss/jit": "0.1.4",
+    "autoprefixer": "10.2.5",
+    "postcss": "8.2.8",
+    "tailwindcss": "2.0.4"
+  },
   "volta": {
     "node": "14.16.0",
     "yarn": "1.22.10"
