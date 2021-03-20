@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { CtaButton, CtaContainer, CtaDescription, CtaTitle } from '../components/cta-section'
+import { CtaButton, CtaSection, CtaDescription, CtaTitle } from '../components/cta-section'
 import { FaqSection, FaqTitle } from '../components/faq-section'
 import { HeroSection } from '../components/hero-section'
 
@@ -24,13 +24,13 @@ export default function Home() {
           }}
         />
         <FaqSection title='FAQ (Tanya Jawab)'></FaqSection>
-        <CtaContainer>
+        <CtaSection>
           <CtaTitle>Tahun Prasekolahku</CtaTitle>
           <CtaDescription>
             Kursus membangun pondasi pendidikan prasekolah PAUD dan TK dengan dasar-dasar filosofi Charlotte Mason
           </CtaDescription>
           <CtaButton>Daftar sekarang</CtaButton>
-        </CtaContainer>
+        </CtaSection>
       </main>
     </div>
   )

@@ -17,7 +17,7 @@ export const CtaButton = ({ children }) => (
   </a>
 )
 
-export const CtaContainer = ({ children }) => (
+export const CtaSection = ({ children }) => (
   <div className='bg-white'>
     <div className='max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8'>
       <div className='bg-indigo-700 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4'>
