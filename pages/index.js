@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { BenefitSection } from '../components/benefit-section'
 import { CtaButton, CtaSection, CtaDescription, CtaTitle } from '../components/cta-section'
 import { FaqAnswer, FaqQuestion, FaqSection } from '../components/faq-section'
 import { HeroSection } from '../components/hero-section'
@@ -16,13 +17,14 @@ export default function Home() {
 
       <main>
         <HeroSection
-          cta={['Daftar', '#']}
+          cta={['Daftar', '#daftar']}
           menu={{
-            Kelas: '#',
-            Benefit: '#',
+            Kelas: '#kelas',
+            Benefit: '#benefit',
             FAQ: '#faq',
           }}
         />
+        <BenefitSection />
         <FaqSection
           description={
             <>

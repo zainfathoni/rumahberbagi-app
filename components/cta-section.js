@@ -18,7 +18,7 @@ export const CtaButton = ({ children }) => (
 )
 
 export const CtaSection = ({ children }) => (
-  <div className='bg-white'>
+  <div className='bg-white' id='daftar'>
     <div className='max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8'>
       <div className='bg-indigo-700 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4'>
         <div className='pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20'>
