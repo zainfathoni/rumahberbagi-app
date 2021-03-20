@@ -1,5 +1,7 @@
 {
   "name": "rumahberbagi-app",
+  "description": "Kelas Rumah Berbagi",
+  "author": "Zain Fathoni <rb@zainf.dev>",
   "version": "0.1.0",
   "private": false,
   "engines": {
