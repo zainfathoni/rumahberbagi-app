@@ -5,7 +5,7 @@ export const FaqQuestion = ({ children }) => <dt className='text-lg leading-6 fo
 export const FaqAnswer = ({ children }) => <dd className='mt-2 text-base text-gray-500'>{children}</dd>
 
 export const FaqSection = ({ title, children, description }) => (
-  <div className='bg-white'>
+  <div className='bg-white' id='faq'>
     <div className='max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8'>
       <div className='lg:grid lg:grid-cols-3 lg:gap-8'>
         <div>

@@ -20,7 +20,7 @@ export default function Home() {
           menu={{
             Kelas: '#',
             Benefit: '#',
-            FAQ: '#',
+            FAQ: '#faq',
           }}
         />
         <FaqSection
