@@ -2,6 +2,9 @@
   "name": "rumahberbagi-app",
   "version": "0.1.0",
   "private": false,
+  "engines": {
+    "node": ">=14"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,5 +14,9 @@
     "next": "10.0.9",
     "react": "17.0.1",
     "react-dom": "17.0.1"
+  },
+  "volta": {
+    "node": "14.16.0",
+    "yarn": "1.22.10"
   }
 }
