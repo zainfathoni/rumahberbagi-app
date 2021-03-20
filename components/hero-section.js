@@ -1,7 +1,7 @@
 import { Transition } from '@headlessui/react'
 import * as React from 'react'
 
-export const HeroContainer = () => {
+export const HeroSection = ({ cta: [ctaTitle, ctaHref], menu }) => {
   const [isOpen, setIsOpen] = React.useState(false)
   return (
     <div class='relative bg-white overflow-hidden'>
@@ -63,30 +63,20 @@ export const HeroContainer = () => {
               </div>
             </div>
             <div class='hidden md:block md:ml-10 md:space-x-10'>
-              <a href='#' class='font-medium text-gray-500 hover:text-gray-900'>
-                Product
-              </a>
-
-              <a href='#' class='font-medium text-gray-500 hover:text-gray-900'>
-                Features
-              </a>
-
-              <a href='#' class='font-medium text-gray-500 hover:text-gray-900'>
-                Marketplace
-              </a>
-
-              <a href='#' class='font-medium text-gray-500 hover:text-gray-900'>
-                Company
-              </a>
+              {Object.entries(menu).map(([title, href]) => (
+                <a href={href} class='font-medium text-gray-500 hover:text-gray-900'>
+                  {title}
+                </a>
+              ))}
             </div>
           </div>
           <div class='hidden md:block text-right'>
             <span class='inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5'>
               <a
-                href='#'
+                href={ctaHref}
                 class='inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50'
               >
-                Log in
+                {ctaTitle}
               </a>
             </span>
           </div>
@@ -128,39 +118,20 @@ export const HeroContainer = () => {
                 </div>
               </div>
               <div class='px-2 pt-2 pb-3 space-y-1'>
-                <a
-                  href='#'
-                  class='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50'
-                >
-                  Product
-                </a>
-
-                <a
-                  href='#'
-                  class='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50'
-                >
-                  Features
-                </a>
-
-                <a
-                  href='#'
-                  class='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50'
-                >
-                  Marketplace
-                </a>
-
-                <a
-                  href='#'
-                  class='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50'
-                >
-                  Company
-                </a>
+                {Object.entries(menu).map(([title, href]) => (
+                  <a
+                    href={href}
+                    class='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50'
+                  >
+                    {title}
+                  </a>
+                ))}
               </div>
               <a
-                href='#'
+                href={ctaHref}
                 class='block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100'
               >
-                Log in
+                {ctaTitle}
               </a>
             </div>
           </div>
@@ -171,19 +142,20 @@ export const HeroContainer = () => {
             <div class='sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left'>
               <h1>
                 <span class='block text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base'>
-                  Coming soon
+                  Kelas Rumah Berbagi
                 </span>
                 <span class='mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl'>
-                  <span class='block text-gray-900'>Data to enrich your</span>
-                  <span class='block text-indigo-600'>online business</span>
+                  <span class='block text-gray-900'>Tahun</span>
+                  <span class='block text-indigo-600'>Prasekolahku</span>
                 </span>
               </h1>
               <p class='mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl'>
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                fugiat veniam occaecat fugiat aliqua ad ad non deserunt sunt.
+                Membangun fondasi pendidikan prasekolah PAUD dan TK dengan dasar-dasar filosofi Charlotte Mason
               </p>
               <div class='mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0'>
-                <p class='text-base font-medium text-gray-900'>Sign up to get notified when it’s ready.</p>
+                <p class='text-base font-medium text-gray-900'>
+                  Daftar di sini untuk mendapatkan notifikasi ketika kelas siap diluncurkan.
+                </p>
                 <form action='#' method='POST' class='mt-3 sm:flex'>
                   <label for='email' class='sr-only'>
                     Email
@@ -193,21 +165,21 @@ export const HeroContainer = () => {
                     name='email'
                     id='email'
                     class='block w-full py-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:flex-1 border-gray-300'
-                    placeholder='Enter your email'
+                    placeholder='Masukkan alamat email Anda'
                   />
                   <button
                     type='submit'
                     class='mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto'
                   >
-                    Notify me
+                    Kabari saya
                   </button>
                 </form>
                 <p class='mt-3 text-sm text-gray-500'>
-                  We care about the protection of your data. Read our{' '}
+                  Kami peduli dengan perlindungan data Anda. Baca{' '}
                   <a href='#' class='font-medium text-gray-900 underline'>
-                    Privacy Policy
-                  </a>
-                  .
+                    Kebijakan Privasi
+                  </a>{' '}
+                  kami di sini.
                 </p>
               </div>
             </div>
@@ -240,7 +212,7 @@ export const HeroContainer = () => {
                   type='button'
                   class='relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
                 >
-                  <span class='sr-only'>Watch our video to learn more</span>
+                  <span class='sr-only'>Tonton video ini untuk mengetahui lebih lanjut</span>
                   <img
                     class='w-full'
                     src='https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'

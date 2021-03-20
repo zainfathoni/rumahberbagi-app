@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { CtaButton, CtaContainer, CtaDescription, CtaTitle } from '../components/cta-section'
-import { HeroContainer } from '../components/hero-section'
+import { HeroSection } from '../components/hero-section'
 
 export default function Home() {
   return (
@@ -14,7 +14,14 @@ export default function Home() {
       </Head>
 
       <main>
-        <HeroContainer />
+        <HeroSection
+          cta={['Daftar', '#']}
+          menu={{
+            Kelas: '#',
+            Benefit: '#',
+            FAQ: '#',
+          }}
+        />
         <CtaContainer>
           <CtaTitle>Tahun Prasekolahku</CtaTitle>
           <CtaDescription>
