@@ -1,8 +1,15 @@
 import Head from 'next/head'
-import { BenefitSection } from '../components/benefit-section'
+import {
+  BenefitBottomContainer,
+  BenefitContainerImage,
+  BenefitItem,
+  BenefitSection,
+  BenefitTopContainer,
+} from '../components/benefit-section'
 import { CtaButton, CtaSection, CtaDescription, CtaTitle } from '../components/cta-section'
 import { FaqAnswer, FaqQuestion, FaqSection } from '../components/faq-section'
 import { HeroSection } from '../components/hero-section'
+import { FileInvoiceIcon } from '../components/icons/file-invoice'
 
 export default function Home() {
   return (
@@ -19,12 +26,34 @@ export default function Home() {
         <HeroSection
           cta={['Daftar', '#daftar']}
           menu={{
-            Kelas: '#kelas',
             Benefit: '#benefit',
             FAQ: '#faq',
           }}
         />
-        <BenefitSection />
+        <BenefitSection
+          top={
+            <BenefitTopContainer
+              title='Ikuti kelas dengan mudah'
+              description='Sarana kelas yang nyaman untuk diikuti dan dirujuk kembali di kemudian hari'
+              image={<BenefitContainerImage src='https://tailwindui.com/img/features/feature-example-1.png' alt='' />}
+            >
+              <BenefitItem icon={<FileInvoiceIcon />} title='Handout berupa Sketch Note'>
+                Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
+              </BenefitItem>
+            </BenefitTopContainer>
+          }
+          bottom={
+            <BenefitBottomContainer
+              title='Interaksi dua arah'
+              description='Kelas interaktif dengan umpan balik langsung dari saya'
+              image={<BenefitContainerImage src='https://tailwindui.com/img/features/feature-example-2.png' alt='' />}
+            >
+              <BenefitItem icon={<FileInvoiceIcon />} title='Handout berupa Sketch Note'>
+                Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
+              </BenefitItem>
+            </BenefitBottomContainer>
+          }
+        />
         <FaqSection
           description={
             <>
