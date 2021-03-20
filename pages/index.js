@@ -51,6 +51,29 @@ export default function Home() {
               kebutuhan.
             </FaqAnswer>
           </div>
+          <div>
+            <FaqQuestion>Berapa biaya kelas ini? Kapan saya harus membayarnya?</FaqQuestion>
+            <FaqAnswer>
+              Biaya kelas ini Rp 100.000,- yang dapat dibayarkan setelah Anda mendapatkan konfirmasi dari kami bahwa
+              Anda mendapatkan slot untuk bergabung di kelas ini.
+            </FaqAnswer>
+          </div>
+          <div>
+            <FaqQuestion>Mengapa jumlah peserta hanya dibatasi sebanyak 20 orang?</FaqQuestion>
+            <FaqAnswer>
+              Supaya proses belajar bisa lebih fokus dan aktivitas tanya jawab bisa dilakukan secara lebih intensif.
+            </FaqAnswer>
+          </div>
+          <div>
+            <FaqQuestion>
+              Saya gagal mendapatkan slot di kelas ini. Lantas bagaimana saya bisa mengikuti kelas ini?
+            </FaqQuestion>
+            <FaqAnswer>
+              Pertama-tama, pastikan dulu bahwa Anda telah terdaftar ke dalam daftar antrian calon peserta. Apabila
+              kelas untuk angkatan berikutnya telah kami buka, kami akan kirimkan email kepada Anda berdasarkan urutan
+              antrian Anda.
+            </FaqAnswer>
+          </div>
         </FaqSection>
         <CtaSection>
           <CtaTitle>Tahun Prasekolahku</CtaTitle>
