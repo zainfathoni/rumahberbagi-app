@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { CtaButton, CtaContainer, CtaDescription, CtaTitle } from '../components/cta-section'
+import { FaqSection, FaqTitle } from '../components/faq-section'
 import { HeroSection } from '../components/hero-section'
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
             FAQ: '#',
           }}
         />
+        <FaqSection title='FAQ (Tanya Jawab)'></FaqSection>
         <CtaContainer>
           <CtaTitle>Tahun Prasekolahku</CtaTitle>
           <CtaDescription>
