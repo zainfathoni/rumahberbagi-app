@@ -27,7 +27,7 @@ export default function Home() {
           description={
             <>
               Tidak menemukan jawaban yang Anda cari? Hubungi kami{' '}
-              <a href='#' class='font-medium text-indigo-600 hover:text-indigo-500'>
+              <a href='#' className='font-medium text-indigo-600 hover:text-indigo-500'>
                 di sini
               </a>
               .
