@@ -5,12 +5,11 @@ export default function Home() {
     <div>
       <Head>
         <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel='icon' href='/favicon.ico' />
+        <link rel='stylesheet' href='https://rsms.me/inter/inter.css' />
       </Head>
 
-      <main>
-        Welcome!
-      </main>
+      <main>Welcome!</main>
     </div>
   )
 }
