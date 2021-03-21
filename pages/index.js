@@ -12,6 +12,7 @@ import { FaqAnswer, FaqDescription, FaqContent, FaqQuestion, FaqSection } from '
 import { HeroSection } from '../components/hero-section'
 import { FileInvoiceIcon } from '../components/icons/file-invoice'
 import { FileSignatureIcon } from '../components/icons/file-signature'
+import { PricingSection } from '../components/pricing-section'
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
           cta={['Daftar', '#daftar']}
           menu={{
             Benefit: '#benefit',
+            Biaya: '#biaya',
             FAQ: '#faq',
           }}
         />
@@ -78,6 +80,7 @@ export default function Home() {
             </BenefitItem>
           </BenefitBottomContainer>
         </BenefitSection>
+        <PricingSection />
         <FaqSection title='FAQ (Tanya Jawab)'>
           <FaqDescription>
             Tidak menemukan jawaban yang Anda cari? Hubungi saya{' '}
@@ -111,7 +114,7 @@ export default function Home() {
             <div>
               <FaqQuestion>Berapa biaya kelas ini? Kapan saya harus membayarnya?</FaqQuestion>
               <FaqAnswer>
-                Biaya kelas ini Rp 125.000,- yang dapat dibayarkan setelah Anda mendapatkan konfirmasi dari kami bahwa
+                Biaya kelas ini Rp 100.000,- yang dapat dibayarkan setelah Anda mendapatkan konfirmasi dari kami bahwa
                 Anda mendapatkan slot untuk bergabung di kelas ini.
               </FaqAnswer>
             </div>
