@@ -53,14 +53,14 @@ export const HeroSection = ({ cta: [ctaTitle, ctaHref], menu }) => {
                     stroke='currentColor'
                     aria-hidden='true'
                   >
-                    <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16' />
+                    <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M4 6h16M4 12h16M4 18h16' />
                   </svg>
                 </button>
               </div>
             </div>
             <div className='hidden md:block md:ml-10 md:space-x-10'>
               {Object.entries(menu).map(([title, href]) => (
-                <a href={href} className='font-medium text-gray-500 hover:text-gray-900'>
+                <a key={title} href={href} className='font-medium text-gray-500 hover:text-gray-900'>
                   {title}
                 </a>
               ))}
@@ -108,7 +108,7 @@ export const HeroSection = ({ cta: [ctaTitle, ctaHref], menu }) => {
                       stroke='currentColor'
                       aria-hidden='true'
                     >
-                      <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 18L18 6M6 6l12 12' />
+                      <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M6 18L18 6M6 6l12 12' />
                     </svg>
                   </button>
                 </div>
@@ -116,6 +116,7 @@ export const HeroSection = ({ cta: [ctaTitle, ctaHref], menu }) => {
               <div className='px-2 pt-2 pb-3 space-y-1'>
                 {Object.entries(menu).map(([title, href]) => (
                   <a
+                    key={title}
                     href={href}
                     className='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50'
                   >
@@ -153,7 +154,7 @@ export const HeroSection = ({ cta: [ctaTitle, ctaHref], menu }) => {
                   Daftar di sini untuk mendapatkan notifikasi ketika kelas siap diluncurkan.
                 </p>
                 <form action='#' method='POST' className='mt-3 sm:flex'>
-                  <label for='email' className='sr-only'>
+                  <label htmlFor='email' className='sr-only'>
                     Email
                   </label>
                   <input
