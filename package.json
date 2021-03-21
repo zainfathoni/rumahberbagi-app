@@ -1,5 +1,7 @@
 {
   "name": "rumahberbagi-app",
+  "description": "Kelas Rumah Berbagi",
+  "author": "Zain Fathoni <rb@zainf.dev>",
   "version": "0.1.0",
   "private": false,
   "engines": {
@@ -11,15 +13,18 @@
     "start": "next start"
   },
   "dependencies": {
-    "@tailwindcss/aspect-ratio": "0.2.0",
+    "@headlessui/react": "0.3.1",
     "next": "10.0.9",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "0.2.0",
+    "@tailwindcss/forms": "0.2.1",
     "@tailwindcss/jit": "0.1.4",
     "autoprefixer": "10.2.5",
     "postcss": "8.2.8",
+    "stylelint-config-recommended": "4.0.0",
     "tailwindcss": "2.0.4"
   },
   "volta": {

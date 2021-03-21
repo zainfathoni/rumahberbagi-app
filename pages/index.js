@@ -1,46 +1,161 @@
 import Head from 'next/head'
+import {
+  BenefitBottomContainer,
+  BenefitContainerImage,
+  BenefitDescription,
+  BenefitItem,
+  BenefitSection,
+  BenefitTopContainer,
+} from '../components/benefit-section'
+import { CtaButton, CtaSection, CtaDescription, CtaTitle } from '../components/cta-section'
+import { FaqAnswer, FaqDescription, FaqContent, FaqQuestion, FaqSection } from '../components/faq-section'
+import { HeroSection } from '../components/hero-section'
+import { FileInvoiceIcon } from '../components/icons/file-invoice'
+import { FileSignatureIcon } from '../components/icons/file-signature'
+import { PricingDescription, PricingIncluded, PricingItem, PricingSection } from '../components/pricing-section'
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Kelas Rumah Berbagi</title>
         <link rel='icon' href='/favicon.ico' />
-        <link rel='stylesheet' href='https://rsms.me/inter/inter.css' />
+        <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' />
+        <link href='https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap' rel='stylesheet' />
       </Head>
 
       <main>
-        <div className='bg-white'>
-          <div className='max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8'>
-            <div className='bg-indigo-700 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4'>
-              <div className='pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20'>
-                <div className='lg:self-center'>
-                  <h2 className='text-3xl font-extrabold text-white sm:text-4xl'>
-                    <span className='block'>Ready to dive in?</span>
-                    <span className='block'>Start your free trial today.</span>
-                  </h2>
-                  <p className='mt-4 text-lg leading-6 text-indigo-200'>
-                    Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel
-                    nulla nec.
-                  </p>
-                  <a
-                    href='#'
-                    className='mt-8 bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-indigo-600 hover:bg-indigo-50'
-                  >
-                    Sign up for free
-                  </a>
-                </div>
-              </div>
-              <div className='-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1'>
-                <img
-                  className='transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20'
-                  src='https://tailwindui.com/img/component-images/full-width-with-sidebar.jpg'
-                  alt='App screenshot'
-                />
-              </div>
+        <HeroSection
+          cta={['Daftar', '#daftar']}
+          menu={{
+            Benefit: '#benefit',
+            Biaya: '#biaya',
+            FAQ: '#faq',
+          }}
+        />
+        <BenefitSection title='Didik anak usia prasekolah Anda secara lembut dan terarah'>
+          <BenefitDescription>
+            Setiap orang tua pasti ingin memberikan pendidikan terbaik bagi anaknya. Di kelas Tahun Prasekolahku ini
+            Anda akan diarahkan untuk mendidik anak Anda di usia prasekolah. Berikut benefit yang akan Anda dapatkan
+            sebagai peserta kelas ini.
+          </BenefitDescription>
+          <BenefitBottomContainer
+            title='Interaksi dua arah'
+            description='Kelas interaktif dengan umpan balik langsung dari saya'
+            image={<BenefitContainerImage src='https://tailwindui.com/img/features/feature-example-2.png' alt='' />}
+          >
+            <BenefitItem icon={<FileInvoiceIcon />} title='Intensif'>
+              Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
+            </BenefitItem>
+            <BenefitItem icon={<FileInvoiceIcon />} title='Praktik'>
+              Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
+            </BenefitItem>
+          </BenefitBottomContainer>
+          <BenefitTopContainer
+            title='Ikuti kelas dengan mudah'
+            description='Sarana kelas yang nyaman untuk diikuti dan dirujuk kembali di kemudian hari'
+            image={<BenefitContainerImage src='https://tailwindui.com/img/features/feature-example-1.png' alt='' />}
+          >
+            <BenefitItem icon={<FileInvoiceIcon />} title='Handout berupa catatan bergambar'>
+              Catatan bergambar (Sketch Note) yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
+            </BenefitItem>
+            <BenefitItem icon={<FileSignatureIcon />} title='Printable planner'>
+              Lembar perencanaan yang dapat dicetak dan dikustomisasi sesuai dengan kebutuhan anak dan keluarga.
+            </BenefitItem>
+            <BenefitItem icon={<FileSignatureIcon />} title='Video rekaman'>
+              File video rekaman dari kelas yang berlangsung.
+            </BenefitItem>
+          </BenefitTopContainer>
+          <BenefitBottomContainer
+            title='Interaksi dua arah'
+            description='Kelas interaktif dengan umpan balik langsung dari saya'
+            image={<BenefitContainerImage src='https://tailwindui.com/img/features/feature-example-2.png' alt='' />}
+          >
+            <BenefitItem icon={<FileInvoiceIcon />} title='Langsung'>
+              Interaksi langsung di dalam kelas melalui Google Meet.
+            </BenefitItem>
+            <BenefitItem icon={<FileInvoiceIcon />} title='Intensif'>
+              Ukuran kelas yang kecil memungkinkan proses diskusi yang mendalam di dalam kelas.
+            </BenefitItem>
+            <BenefitItem icon={<FileInvoiceIcon />} title='Demonstrasi dan diskusi'>
+              Demonstrasi pengisian lembar perencanaan yang telah disediakan disertai dengan diskusi dan tanya jawab.
+            </BenefitItem>
+          </BenefitBottomContainer>
+        </BenefitSection>
+        <PricingSection title='Biaya kelas'>
+          <PricingDescription>
+            Biaya yang perlu dibayarkan setelah terkonfirmasi sebagai peserta kelas
+          </PricingDescription>
+          <PricingIncluded title='Biaya termasuk'>
+            <PricingItem>Handout berupa catatan bergambar</PricingItem>
+            <PricingItem>Printable planner</PricingItem>
+            <PricingItem>Akses kelas online melalui Google Meet</PricingItem>
+            <PricingItem>Video rekaman kelas</PricingItem>
+          </PricingIncluded>
+        </PricingSection>
+        <FaqSection title='FAQ (Tanya Jawab)'>
+          <FaqDescription>
+            Tidak menemukan jawaban yang Anda cari? Hubungi saya{' '}
+            <a
+              href='https://www.instagram.com/vika.riandini/'
+              className='font-medium text-indigo-600 hover:text-indigo-500'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              melalui Instagram
+            </a>
+            .
+          </FaqDescription>
+          <FaqContent>
+            <div>
+              <FaqQuestion>Kelas ini untuk siapa?</FaqQuestion>
+              <FaqAnswer>
+                Kelas ini untuk para orang tua, khususnya untuk anak di bawah usia sekolah, tetapi tidak menutup
+                kemungkinan orang tua dengan anak di usia sekolah masih membutuhkannya karena bisa jadi ada aspek yang
+                terlewat dari fondasi yang harus dipersiapkan di usia prasekolah.
+              </FaqAnswer>
             </div>
-          </div>
-        </div>
+            <div>
+              <FaqQuestion>Berapa lama kelas ini akan berlangsung?</FaqQuestion>
+              <FaqAnswer>
+                Setidaknya akan ada dua pertemuan yang terdiri dari pembahasan materi dan praktik pembuatan rencana
+                pendidikan untuk anak prasekolah. Tidak menutup kemungkinan jumlah pertemuan akan ditambah sesuai dengan
+                kebutuhan.
+              </FaqAnswer>
+            </div>
+            <div>
+              <FaqQuestion>Berapa biaya kelas ini? Kapan saya harus membayarnya?</FaqQuestion>
+              <FaqAnswer>
+                Biaya kelas ini Rp 100.000,- yang dapat dibayarkan setelah Anda mendapatkan konfirmasi dari kami bahwa
+                Anda mendapatkan slot untuk bergabung di kelas ini.
+              </FaqAnswer>
+            </div>
+            <div>
+              <FaqQuestion>Mengapa jumlah peserta hanya dibatasi sebanyak 20 orang?</FaqQuestion>
+              <FaqAnswer>
+                Supaya proses belajar bisa lebih fokus dan aktivitas tanya jawab bisa dilakukan secara lebih intensif.
+              </FaqAnswer>
+            </div>
+            <div>
+              <FaqQuestion>
+                Saya gagal mendapatkan slot di kelas ini. Lantas bagaimana saya bisa mengikuti kelas ini?
+              </FaqQuestion>
+              <FaqAnswer>
+                Pertama-tama, pastikan dulu bahwa Anda telah terdaftar ke dalam daftar antrian calon peserta. Apabila
+                kelas untuk angkatan berikutnya telah kami buka, kami akan kirimkan email kepada Anda berdasarkan urutan
+                antrian Anda.
+              </FaqAnswer>
+            </div>
+          </FaqContent>
+        </FaqSection>
+        <CtaSection>
+          <CtaTitle>Tahun Prasekolahku</CtaTitle>
+          <CtaDescription>
+            Kursus membangun pondasi pendidikan prasekolah PAUD dan TK dengan dasar-dasar filosofi Charlotte Mason
+          </CtaDescription>
+          <CtaButton>Daftar sekarang</CtaButton>
+        </CtaSection>
       </main>
     </div>
   )
