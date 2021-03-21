@@ -35,11 +35,7 @@ export const HeroSection = ({ cta: [ctaTitle, ctaHref], menu }) => {
             <div className='flex items-center justify-between w-full md:w-auto'>
               <a href='#'>
                 <span className='sr-only'>Workflow</span>
-                <img
-                  className='h-8 w-auto sm:h-10'
-                  src='https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg'
-                  alt=''
-                />
+                <img className='h-8 w-auto sm:h-10' src='/rumah-berbagi.svg' alt='Logo Rumah Berbagi' />
               </a>
               <div className='-mr-2 flex items-center md:hidden'>
                 <button
@@ -95,11 +91,7 @@ export const HeroSection = ({ cta: [ctaTitle, ctaHref], menu }) => {
             <div className='rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden'>
               <div className='px-5 pt-4 flex items-center justify-between'>
                 <div>
-                  <img
-                    className='h-8 w-auto'
-                    src='https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg'
-                    alt=''
-                  />
+                  <img className='h-8 w-auto' src='/rumah-berbagi.svg' alt='Logo Rumah Berbagi' />
                 </div>
                 <div className='-mr-2'>
                   <button
