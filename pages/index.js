@@ -10,6 +10,7 @@ import { CtaButton, CtaSection, CtaDescription, CtaTitle } from '../components/c
 import { FaqAnswer, FaqQuestion, FaqSection } from '../components/faq-section'
 import { HeroSection } from '../components/hero-section'
 import { FileInvoiceIcon } from '../components/icons/file-invoice'
+import { FileSignatureIcon } from '../components/icons/file-signature'
 
 export default function Home() {
   return (
@@ -31,6 +32,8 @@ export default function Home() {
           }}
         />
         <BenefitSection
+          title='Didik anak usia prasekolah Anda secara lembut dan terarah'
+          description='Setiap orang tua pasti ingin memberikan pendidikan terbaik bagi anaknya. Di kelas Tahun Prasekolahku ini Anda akan diarahkan untuk mendidik anak Anda di usia prasekolah. Berikut benefit yang akan Anda dapatkan sebagai peserta kelas ini.'
           top={
             <BenefitTopContainer
               title='Ikuti kelas dengan mudah'
@@ -38,6 +41,9 @@ export default function Home() {
               image={<BenefitContainerImage src='https://tailwindui.com/img/features/feature-example-1.png' alt='' />}
             >
               <BenefitItem icon={<FileInvoiceIcon />} title='Handout berupa Sketch Note'>
+                Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
+              </BenefitItem>
+              <BenefitItem icon={<FileSignatureIcon />} title='Planner'>
                 Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
               </BenefitItem>
             </BenefitTopContainer>
@@ -48,7 +54,10 @@ export default function Home() {
               description='Kelas interaktif dengan umpan balik langsung dari saya'
               image={<BenefitContainerImage src='https://tailwindui.com/img/features/feature-example-2.png' alt='' />}
             >
-              <BenefitItem icon={<FileInvoiceIcon />} title='Handout berupa Sketch Note'>
+              <BenefitItem icon={<FileInvoiceIcon />} title='Intensif'>
+                Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
+              </BenefitItem>
+              <BenefitItem icon={<FileInvoiceIcon />} title='Praktik'>
                 Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
               </BenefitItem>
             </BenefitBottomContainer>
