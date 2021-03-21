@@ -55,11 +55,14 @@ export default function Home() {
             description='Sarana kelas yang nyaman untuk diikuti dan dirujuk kembali di kemudian hari'
             image={<BenefitContainerImage src='https://tailwindui.com/img/features/feature-example-1.png' alt='' />}
           >
-            <BenefitItem icon={<FileInvoiceIcon />} title='Handout berupa Sketch Note'>
-              Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
+            <BenefitItem icon={<FileInvoiceIcon />} title='Handout berupa catatan bergambar'>
+              Catatan bergambar (Sketch Note) yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
             </BenefitItem>
-            <BenefitItem icon={<FileSignatureIcon />} title='Planner'>
-              Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
+            <BenefitItem icon={<FileSignatureIcon />} title='Printable planner'>
+              Lembar perencanaan yang dapat dicetak dan dikustomisasi sesuai dengan kebutuhan anak dan keluarga.
+            </BenefitItem>
+            <BenefitItem icon={<FileSignatureIcon />} title='Video rekaman'>
+              File video rekaman dari kelas yang berlangsung.
             </BenefitItem>
           </BenefitTopContainer>
           <BenefitBottomContainer
@@ -68,10 +71,10 @@ export default function Home() {
             image={<BenefitContainerImage src='https://tailwindui.com/img/features/feature-example-2.png' alt='' />}
           >
             <BenefitItem icon={<FileInvoiceIcon />} title='Intensif'>
-              Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
+              Ukuran kelas yang kecil memungkinkan proses diskusi yang mendalam di dalam kelas.
             </BenefitItem>
-            <BenefitItem icon={<FileInvoiceIcon />} title='Praktik'>
-              Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
+            <BenefitItem icon={<FileInvoiceIcon />} title='Demonstrasi dan diskusi'>
+              Demonstrasi pengisian lembar perencanaan yang telah disediakan disertai dengan diskusi dan tanya jawab.
             </BenefitItem>
           </BenefitBottomContainer>
         </BenefitSection>
@@ -108,7 +111,7 @@ export default function Home() {
             <div>
               <FaqQuestion>Berapa biaya kelas ini? Kapan saya harus membayarnya?</FaqQuestion>
               <FaqAnswer>
-                Biaya kelas ini Rp 100.000,- yang dapat dibayarkan setelah Anda mendapatkan konfirmasi dari kami bahwa
+                Biaya kelas ini Rp 125.000,- yang dapat dibayarkan setelah Anda mendapatkan konfirmasi dari kami bahwa
                 Anda mendapatkan slot untuk bergabung di kelas ini.
               </FaqAnswer>
             </div>
