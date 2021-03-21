@@ -12,7 +12,7 @@ import { FaqAnswer, FaqDescription, FaqContent, FaqQuestion, FaqSection } from '
 import { HeroSection } from '../components/hero-section'
 import { FileInvoiceIcon } from '../components/icons/file-invoice'
 import { FileSignatureIcon } from '../components/icons/file-signature'
-import { PricingSection } from '../components/pricing-section'
+import { PricingDescription, PricingIncluded, PricingItem, PricingSection } from '../components/pricing-section'
 
 export default function Home() {
   return (
@@ -72,6 +72,9 @@ export default function Home() {
             description='Kelas interaktif dengan umpan balik langsung dari saya'
             image={<BenefitContainerImage src='https://tailwindui.com/img/features/feature-example-2.png' alt='' />}
           >
+            <BenefitItem icon={<FileInvoiceIcon />} title='Langsung'>
+              Interaksi langsung di dalam kelas melalui Google Meet.
+            </BenefitItem>
             <BenefitItem icon={<FileInvoiceIcon />} title='Intensif'>
               Ukuran kelas yang kecil memungkinkan proses diskusi yang mendalam di dalam kelas.
             </BenefitItem>
@@ -80,7 +83,17 @@ export default function Home() {
             </BenefitItem>
           </BenefitBottomContainer>
         </BenefitSection>
-        <PricingSection />
+        <PricingSection title='Biaya kelas'>
+          <PricingDescription>
+            Biaya yang perlu dibayarkan setelah terkonfirmasi sebagai peserta kelas
+          </PricingDescription>
+          <PricingIncluded title='Biaya termasuk'>
+            <PricingItem>Handout berupa catatan bergambar</PricingItem>
+            <PricingItem>Printable planner</PricingItem>
+            <PricingItem>Akses kelas online melalui Google Meet</PricingItem>
+            <PricingItem>Video rekaman kelas</PricingItem>
+          </PricingIncluded>
+        </PricingSection>
         <FaqSection title='FAQ (Tanya Jawab)'>
           <FaqDescription>
             Tidak menemukan jawaban yang Anda cari? Hubungi saya{' '}
