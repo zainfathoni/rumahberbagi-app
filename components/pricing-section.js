@@ -63,7 +63,7 @@ export const PricingSection = ({ title, children }) => {
           <div className='relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
             <div className='max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-none lg:flex'>
               <div className='flex-1 bg-white px-6 py-8 lg:p-12'>
-                <h3 className='text-2xl font-extrabold text-gray-900 sm:text-3xl'>Sekali Bayar</h3>
+                <h3 className='text-2xl font-extrabold text-gray-900 sm:text-3xl'>Terbatas untuk 20 orang peserta</h3>
                 <p className='mt-6 text-base text-gray-500'>
                   Apabila Anda berubah pikiran, kabari kami setidaknya tiga hari sebelum kelas dimulai supaya kami dapat
                   mengembalikan dana Anda sekaligus membuka slot untuk calon peserta kelas lainnya.
@@ -71,7 +71,7 @@ export const PricingSection = ({ title, children }) => {
                 {included}
               </div>
               <div className='py-8 px-6 text-center bg-gray-50 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12'>
-                <p className='text-lg leading-6 font-medium text-gray-900'>Biaya kelas</p>
+                <p className='text-lg leading-6 font-medium text-gray-900'>Sekali bayar</p>
                 <div className='mt-4 flex items-center justify-center text-5xl font-extrabold text-gray-900'>
                   <span className='ml-3 text-xl font-medium text-gray-500'>Rp</span>
                   <span>100.000</span>
