@@ -2,6 +2,7 @@ import Head from 'next/head'
 import {
   BenefitBottomContainer,
   BenefitContainerImage,
+  BenefitDescription,
   BenefitItem,
   BenefitSection,
   BenefitTopContainer,
@@ -31,38 +32,49 @@ export default function Home() {
             FAQ: '#faq',
           }}
         />
-        <BenefitSection
-          title='Didik anak usia prasekolah Anda secara lembut dan terarah'
-          description='Setiap orang tua pasti ingin memberikan pendidikan terbaik bagi anaknya. Di kelas Tahun Prasekolahku ini Anda akan diarahkan untuk mendidik anak Anda di usia prasekolah. Berikut benefit yang akan Anda dapatkan sebagai peserta kelas ini.'
-          top={
-            <BenefitTopContainer
-              title='Ikuti kelas dengan mudah'
-              description='Sarana kelas yang nyaman untuk diikuti dan dirujuk kembali di kemudian hari'
-              image={<BenefitContainerImage src='https://tailwindui.com/img/features/feature-example-1.png' alt='' />}
-            >
-              <BenefitItem icon={<FileInvoiceIcon />} title='Handout berupa Sketch Note'>
-                Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
-              </BenefitItem>
-              <BenefitItem icon={<FileSignatureIcon />} title='Planner'>
-                Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
-              </BenefitItem>
-            </BenefitTopContainer>
-          }
-          bottom={
-            <BenefitBottomContainer
-              title='Interaksi dua arah'
-              description='Kelas interaktif dengan umpan balik langsung dari saya'
-              image={<BenefitContainerImage src='https://tailwindui.com/img/features/feature-example-2.png' alt='' />}
-            >
-              <BenefitItem icon={<FileInvoiceIcon />} title='Intensif'>
-                Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
-              </BenefitItem>
-              <BenefitItem icon={<FileInvoiceIcon />} title='Praktik'>
-                Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
-              </BenefitItem>
-            </BenefitBottomContainer>
-          }
-        />
+        <BenefitSection title='Didik anak usia prasekolah Anda secara lembut dan terarah'>
+          <BenefitDescription>
+            Setiap orang tua pasti ingin memberikan pendidikan terbaik bagi anaknya. Di kelas Tahun Prasekolahku ini
+            Anda akan diarahkan untuk mendidik anak Anda di usia prasekolah. Berikut benefit yang akan Anda dapatkan
+            sebagai peserta kelas ini.
+          </BenefitDescription>
+          <BenefitBottomContainer
+            title='Interaksi dua arah'
+            description='Kelas interaktif dengan umpan balik langsung dari saya'
+            image={<BenefitContainerImage src='https://tailwindui.com/img/features/feature-example-2.png' alt='' />}
+          >
+            <BenefitItem icon={<FileInvoiceIcon />} title='Intensif'>
+              Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
+            </BenefitItem>
+            <BenefitItem icon={<FileInvoiceIcon />} title='Praktik'>
+              Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
+            </BenefitItem>
+          </BenefitBottomContainer>
+          <BenefitTopContainer
+            title='Ikuti kelas dengan mudah'
+            description='Sarana kelas yang nyaman untuk diikuti dan dirujuk kembali di kemudian hari'
+            image={<BenefitContainerImage src='https://tailwindui.com/img/features/feature-example-1.png' alt='' />}
+          >
+            <BenefitItem icon={<FileInvoiceIcon />} title='Handout berupa Sketch Note'>
+              Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
+            </BenefitItem>
+            <BenefitItem icon={<FileSignatureIcon />} title='Planner'>
+              Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
+            </BenefitItem>
+          </BenefitTopContainer>
+          <BenefitBottomContainer
+            title='Interaksi dua arah'
+            description='Kelas interaktif dengan umpan balik langsung dari saya'
+            image={<BenefitContainerImage src='https://tailwindui.com/img/features/feature-example-2.png' alt='' />}
+          >
+            <BenefitItem icon={<FileInvoiceIcon />} title='Intensif'>
+              Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
+            </BenefitItem>
+            <BenefitItem icon={<FileInvoiceIcon />} title='Praktik'>
+              Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
+            </BenefitItem>
+          </BenefitBottomContainer>
+        </BenefitSection>
         <FaqSection
           description={
             <>

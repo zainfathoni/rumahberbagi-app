@@ -1,5 +1,9 @@
 import * as React from 'react'
 
+export const BenefitDescription = ({ children }) => (
+  <p className='mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500'>{children}</p>
+)
+
 export const BenefitTopContainer = ({ children, title, description, image }) => (
   <div className='relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center'>
     <div className='relative'>
@@ -91,64 +95,81 @@ export const BenefitItem = ({ icon, title, children }) => (
   </div>
 )
 
-export const BenefitSection = ({ title, description, top, bottom }) => (
-  <div className='py-16 bg-gray-50 overflow-hidden lg:py-24' id='benefit'>
-    <div className='relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl'>
-      <svg
-        className='hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4'
-        width='404'
-        height='784'
-        fill='none'
-        viewBox='0 0 404 784'
-        aria-hidden='true'
-      >
-        <defs>
-          <pattern
-            id='b1e6e422-73f8-40a6-b5d9-c8586e37e0e7'
-            x='0'
-            y='0'
-            width='20'
-            height='20'
-            patternUnits='userSpaceOnUse'
-          >
-            <rect x='0' y='0' width='4' height='4' className='text-gray-200' fill='currentColor' />
-          </pattern>
-        </defs>
-        <rect width='404' height='784' fill='url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)' />
-      </svg>
+export const BenefitSection = ({ children, title }) => {
+  let top, bottom, description
+  React.Children.forEach(children, (child) => {
+    switch (child.type) {
+      case BenefitDescription:
+        description = child
+        break
+      case BenefitTopContainer:
+        top = child
+        break
+      case BenefitBottomContainer:
+        bottom = child
+        break
+    }
+  })
 
-      <div className='relative'>
-        <h2 className='text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl'>
-          {title}
-        </h2>
-        <p className='mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500'>{description}</p>
+  return (
+    <div className='py-16 bg-gray-50 overflow-hidden lg:py-24' id='benefit'>
+      <div className='relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl'>
+        <svg
+          className='hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4'
+          width='404'
+          height='784'
+          fill='none'
+          viewBox='0 0 404 784'
+          aria-hidden='true'
+        >
+          <defs>
+            <pattern
+              id='b1e6e422-73f8-40a6-b5d9-c8586e37e0e7'
+              x='0'
+              y='0'
+              width='20'
+              height='20'
+              patternUnits='userSpaceOnUse'
+            >
+              <rect x='0' y='0' width='4' height='4' className='text-gray-200' fill='currentColor' />
+            </pattern>
+          </defs>
+          <rect width='404' height='784' fill='url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)' />
+        </svg>
+
+        <div className='relative'>
+          <h2 className='text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl'>
+            {title}
+          </h2>
+          {description}
+        </div>
+
+        {top}
+        <svg
+          className='hidden lg:block absolute right-full transform translate-x-1/2 translate-y-12'
+          width='404'
+          height='784'
+          fill='none'
+          viewBox='0 0 404 784'
+          aria-hidden='true'
+        >
+          <defs>
+            <pattern
+              id='64e643ad-2176-4f86-b3d7-f2c5da3b6a6d'
+              x='0'
+              y='0'
+              width='20'
+              height='20'
+              patternUnits='userSpaceOnUse'
+            >
+              <rect x='0' y='0' width='4' height='4' className='text-gray-200' fill='currentColor' />
+            </pattern>
+          </defs>
+          <rect width='404' height='784' fill='url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)' />
+        </svg>
+
+        {bottom}
       </div>
-
-      {top}
-      <svg
-        className='hidden lg:block absolute right-full transform translate-x-1/2 translate-y-12'
-        width='404'
-        height='784'
-        fill='none'
-        viewBox='0 0 404 784'
-        aria-hidden='true'
-      >
-        <defs>
-          <pattern
-            id='64e643ad-2176-4f86-b3d7-f2c5da3b6a6d'
-            x='0'
-            y='0'
-            width='20'
-            height='20'
-            patternUnits='userSpaceOnUse'
-          >
-            <rect x='0' y='0' width='4' height='4' className='text-gray-200' fill='currentColor' />
-          </pattern>
-        </defs>
-        <rect width='404' height='784' fill='url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)' />
-      </svg>
-
-      {bottom}
     </div>
-  </div>
-)
+  )
+}
