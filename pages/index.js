@@ -10,8 +10,11 @@ import {
 import { CtaButton, CtaSection, CtaDescription, CtaTitle } from '../components/cta-section'
 import { FaqAnswer, FaqDescription, FaqContent, FaqQuestion, FaqSection } from '../components/faq-section'
 import { HeroSection } from '../components/hero-section'
+import { ChalkboardTeacherIcon } from '../components/icons/chalkboard-teacher'
+import { CommentsAltIcon } from '../components/icons/comments-alt'
 import { FileInvoiceIcon } from '../components/icons/file-invoice'
 import { FileSignatureIcon } from '../components/icons/file-signature'
+import { FileVideoIcon } from '../components/icons/file-video'
 import { PricingDescription, PricingIncluded, PricingItem, PricingSection } from '../components/pricing-section'
 
 export default function Home() {
@@ -40,18 +43,6 @@ export default function Home() {
             Anda akan diarahkan untuk mendidik anak Anda di usia prasekolah. Berikut benefit yang akan Anda dapatkan
             sebagai peserta kelas ini.
           </BenefitDescription>
-          <BenefitBottomContainer
-            title='Interaksi dua arah'
-            description='Kelas interaktif dengan umpan balik langsung dari saya'
-            image={<BenefitContainerImage src='https://tailwindui.com/img/features/feature-example-2.png' alt='' />}
-          >
-            <BenefitItem icon={<FileInvoiceIcon />} title='Intensif'>
-              Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
-            </BenefitItem>
-            <BenefitItem icon={<FileInvoiceIcon />} title='Praktik'>
-              Sketch Note yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
-            </BenefitItem>
-          </BenefitBottomContainer>
           <BenefitTopContainer
             title='Ikuti kelas dengan mudah'
             description='Sarana kelas yang nyaman untuk diikuti dan dirujuk kembali di kemudian hari'
@@ -63,7 +54,7 @@ export default function Home() {
             <BenefitItem icon={<FileSignatureIcon />} title='Printable planner'>
               Lembar perencanaan yang dapat dicetak dan dikustomisasi sesuai dengan kebutuhan anak dan keluarga.
             </BenefitItem>
-            <BenefitItem icon={<FileSignatureIcon />} title='Video rekaman'>
+            <BenefitItem icon={<FileVideoIcon />} title='Video rekaman'>
               File video rekaman dari kelas yang berlangsung.
             </BenefitItem>
           </BenefitTopContainer>
@@ -72,13 +63,11 @@ export default function Home() {
             description='Kelas interaktif dengan umpan balik langsung dari saya'
             image={<BenefitContainerImage src='https://tailwindui.com/img/features/feature-example-2.png' alt='' />}
           >
-            <BenefitItem icon={<FileInvoiceIcon />} title='Langsung'>
-              Interaksi langsung di dalam kelas melalui Google Meet.
+            <BenefitItem icon={<ChalkboardTeacherIcon />} title='Langsung dan intensif'>
+              Interaksi langsung di dalam kelas melalui Google Meet. Ukuran kelas yang kecil memungkinkan proses diskusi
+              yang mendalam di dalam kelas.
             </BenefitItem>
-            <BenefitItem icon={<FileInvoiceIcon />} title='Intensif'>
-              Ukuran kelas yang kecil memungkinkan proses diskusi yang mendalam di dalam kelas.
-            </BenefitItem>
-            <BenefitItem icon={<FileInvoiceIcon />} title='Demonstrasi dan diskusi'>
+            <BenefitItem icon={<CommentsAltIcon />} title='Demonstrasi dan diskusi'>
               Demonstrasi pengisian lembar perencanaan yang telah disediakan disertai dengan diskusi dan tanya jawab.
             </BenefitItem>
           </BenefitBottomContainer>
