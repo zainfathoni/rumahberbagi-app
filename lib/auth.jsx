@@ -1,5 +1,6 @@
 import * as React from 'react'
 import firebase from './firebase'
+import { createUser } from './db'
 
 // Create context with a default state.
 const authContext = React.createContext({
@@ -54,7 +55,8 @@ function useProvideAuth() {
     // Format user into my required state.
     const authedUser = formatAuthState(response.user)
     // firestore database function
-    createUser(authedUser.uid, authedUser)
+    // createUser(authedUser.uid, authedUser)
+    console.log(authedUser)
   }
 
   /**
@@ -112,4 +114,4 @@ export function AuthProvider({ children }) {
 }
 
 // Helper to easily get auth context within components
-export const useAuth = () => useContext(authContext)
+export const useAuth = () => React.useContext(authContext)

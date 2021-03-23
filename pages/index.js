@@ -30,7 +30,6 @@ export default function Home() {
 
       <main>
         <HeroSection
-          cta={['Daftar', '#daftar']}
           menu={{
             Benefit: '#benefit',
             Biaya: '#biaya',

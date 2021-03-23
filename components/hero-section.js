@@ -1,8 +1,19 @@
 import { Transition } from '@headlessui/react'
 import * as React from 'react'
+import { useAuth } from '../lib/auth'
 
-export const HeroSection = ({ cta: [ctaTitle, ctaHref], menu }) => {
+const HeroCta = ({ className }) => {
+  const { auth, signOut, signInAnonymously } = useAuth()
+  return (
+    <button onClick={() => (auth ? signOut() : signInAnonymously())} className={className}>
+      {auth ? 'Keluar' : 'Masuk'}
+    </button>
+  )
+}
+
+export const HeroSection = ({ menu }) => {
   const [isOpen, setIsOpen] = React.useState(false)
+
   return (
     <div className='relative bg-white overflow-hidden'>
       <div className='hidden lg:block lg:absolute lg:inset-0' aria-hidden='true'>
@@ -68,12 +79,7 @@ export const HeroSection = ({ cta: [ctaTitle, ctaHref], menu }) => {
           </div>
           <div className='hidden md:block text-right'>
             <span className='inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5'>
-              <a
-                href={ctaHref}
-                className='inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50'
-              >
-                {ctaTitle}
-              </a>
+              <HeroCta className='inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50' />
             </span>
           </div>
         </nav>
@@ -124,12 +130,7 @@ export const HeroSection = ({ cta: [ctaTitle, ctaHref], menu }) => {
                   </a>
                 ))}
               </div>
-              <a
-                href={ctaHref}
-                className='block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100'
-              >
-                {ctaTitle}
-              </a>
+              <HeroCta className='block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100' />
             </div>
           </div>
         </Transition>
