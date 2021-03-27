@@ -1,11 +1,11 @@
 import * as React from 'react'
 
 export const Alert = () => (
-  <div class='rounded-md bg-yellow-50 p-4'>
-    <div class='flex'>
-      <div class='flex-shrink-0'>
+  <div className='rounded-md bg-yellow-50 p-4'>
+    <div className='flex'>
+      <div className='flex-shrink-0'>
         <svg
-          class='h-5 w-5 text-yellow-400'
+          className='h-5 w-5 text-yellow-400'
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 20 20'
           fill='currentColor'
@@ -18,9 +18,9 @@ export const Alert = () => (
           />
         </svg>
       </div>
-      <div class='ml-3'>
-        <h3 class='text-sm font-medium text-yellow-800'>Perhatian</h3>
-        <div class='mt-2 text-sm text-yellow-700'>
+      <div className='ml-3'>
+        <h3 className='text-sm font-medium text-yellow-800'>Perhatian</h3>
+        <div className='mt-2 text-sm text-yellow-700'>
           <p>
             Materi kelas dan sistem pendaftaran peserta masih sedang dalam persiapan. Nantikan pengumuman berikutnya di
             Instagram <a href='https://www.instagram.com/vika.riandini/'>@vika.riandini</a> setelah Ramadhan.
