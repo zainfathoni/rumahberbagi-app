@@ -1,12 +1,11 @@
 import Head from 'next/head'
-import { ArticleSection } from '../components/article-section'
-import { DownloadSection } from '../components/download-section'
+import { ArticleSection } from '../../components/article-section'
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>Ramadhan Planner | Rumah Berbagi</title>
+        <title>15 Days Countdown to Ramadhan | Rumah Berbagi</title>
         <link rel='icon' href='/rumah-berbagi.jpeg' />
         <link rel='dns-prefetch' href='//fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' />
@@ -15,7 +14,6 @@ export default function Home() {
 
       <main>
         <ArticleSection />
-        <DownloadSection />
       </main>
     </div>
   )
