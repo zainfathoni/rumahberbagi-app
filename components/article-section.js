@@ -61,7 +61,7 @@ export const ArticleSection = () => (
                     clip-rule='evenodd'
                   />
                 </svg>
-                <span className='ml-2'>Photograph by Marcus O’Leary</span>
+                <span className='ml-2'>Ramadhan Planner</span>
               </figcaption>
             </figure>
           </div>
