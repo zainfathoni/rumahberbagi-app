@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Image from 'next/image'
 
 export const ArticleSection = () => (
   <div className='bg-white overflow-hidden'>
@@ -39,12 +40,12 @@ export const ArticleSection = () => (
           <div className='relative text-base mx-auto max-w-prose lg:max-w-none'>
             <figure>
               <div className='aspect-w-12 aspect-h-7 lg:aspect-none'>
-                <img
+                <Image
                   className='rounded-lg shadow-lg object-cover object-center'
-                  src='/ramadhan-planner.jpeg'
-                  alt='Ramadhan Planner'
-                  width='2160'
-                  height='1620'
+                  src='/images/15-countdown-to-ramadhan.jpeg'
+                  alt='Ramadhan preparation planner'
+                  width={2160}
+                  height={1620}
                 />
               </div>
               <figcaption className='mt-3 flex text-sm text-gray-500'>
