@@ -1,5 +1,6 @@
 import { Transition } from '@headlessui/react'
 import * as React from 'react'
+import { Alert } from './alert'
 
 export const HeroSection = ({ cta: [ctaTitle, ctaHref], menu }) => {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -34,7 +35,7 @@ export const HeroSection = ({ cta: [ctaTitle, ctaHref], menu }) => {
           <div className='flex items-center flex-1'>
             <div className='flex items-center justify-between w-full md:w-auto'>
               <a href='#'>
-                <span className='sr-only'>Workflow</span>
+                <span className='sr-only'>Rumah Berbagi</span>
                 <img className='h-8 w-auto sm:h-10' src='/rumah-berbagi.svg' alt='Logo Rumah Berbagi' />
               </a>
               <div className='-mr-2 flex items-center md:hidden'>
@@ -134,7 +135,10 @@ export const HeroSection = ({ cta: [ctaTitle, ctaHref], menu }) => {
           </div>
         </Transition>
 
-        <main className='mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32'>
+        <header className='mt-4 mx-auto max-w-7xl px-4 sm:mt-6 sm:px-6 lg:mt-8'>
+          <Alert />
+        </header>
+        <main className='mt-4 mx-auto max-w-7xl px-4 sm:mt-6 sm:px-6 lg:mt-8'>
           <div className='lg:grid lg:grid-cols-12 lg:gap-8'>
             <div className='sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left'>
               <h1>

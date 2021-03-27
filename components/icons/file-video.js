@@ -7,7 +7,6 @@ export const FileVideoIcon = () => (
     focusable='false'
     data-prefix='fad'
     data-icon='file-video'
-    class='svg-inline--fa fa-file-video fa-w-12'
     role='img'
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 384 512'

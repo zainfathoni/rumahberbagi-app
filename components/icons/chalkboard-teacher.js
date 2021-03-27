@@ -7,7 +7,6 @@ export const ChalkboardTeacherIcon = () => (
     focusable='false'
     data-prefix='fad'
     data-icon='chalkboard-teacher'
-    class='svg-inline--fa fa-chalkboard-teacher fa-w-20'
     role='img'
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 640 512'
