@@ -6,9 +6,9 @@ export const ArticleSection = () => (
       <div className='hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen'></div>
       <div className='mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none'>
         <div>
-          <h2 className='text-base text-indigo-600 font-semibold tracking-wide uppercase'>Case Study</h2>
+          <h2 className='text-base text-indigo-600 font-semibold tracking-wide uppercase'>Free Download</h2>
           <h3 className='mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl'>
-            Meet Whitney
+            15 days countdown to Ramadhan
           </h3>
         </div>
       </div>
@@ -41,10 +41,10 @@ export const ArticleSection = () => (
               <div className='aspect-w-12 aspect-h-7 lg:aspect-none'>
                 <img
                   className='rounded-lg shadow-lg object-cover object-center'
-                  src='https://images.unsplash.com/photo-1546913199-55e06682967e?ixlib=rb-1.2.1&auto=format&fit=crop&crop=focalpoint&fp-x=.735&fp-y=.55&w=1184&h=1376&q=80'
-                  alt='Whitney leaning against a railing on a downtown street'
-                  width='1184'
-                  height='1376'
+                  src='/ramadhan-planner.jpeg'
+                  alt='Ramadhan Planner'
+                  width='2160'
+                  height='1620'
                 />
               </div>
               <figcaption className='mt-3 flex text-sm text-gray-500'>
@@ -68,42 +68,23 @@ export const ArticleSection = () => (
         </div>
         <div className='mt-8 lg:mt-0'>
           <div className='text-base max-w-prose mx-auto lg:max-w-none'>
-            <p className='text-lg text-gray-500'>
-              Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique
-              pellentesque. Blandit amet, sed aenean erat arcu morbi.
-            </p>
+            <p className='text-lg text-gray-500'>Sesaat lagi Ramadhan tiba.</p>
           </div>
           <div className='mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1'>
             <p>
-              Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium
-              arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.
+              Kami ingin Ramadhan tahun ini jadi lebih bermakna, mindful. Bukan sekadar mencapai target banyaknya
+              ibadah, tetapi juga menjalin hubungan yang lebih dekat dengen Allah SWT dan Rasulullah saw.
             </p>
             <p>
-              Bibendum eu nulla feugiat justo, elit adipiscing. Ut tristique sit nisi lorem pulvinar. Urna, laoreet
-              fusce nibh leo. Dictum et et et sit. Faucibus sed non gravida lectus dignissim imperdiet a.
+              Untuk mencapai itu, kami baru saja membuat rencana 15 hari hitung mundur Ramadhan. Setiap harinya ada
+              waktu khusus yang kami dedikasikan untuk mempersiapkan bulan suci ini.
             </p>
             <p>
-              Dictum magnis risus phasellus vitae quam morbi. Quis lorem lorem arcu, metus, egestas netus cursus. In.
-            </p>
-            <ul>
-              <li>Quis elit egestas venenatis mattis dignissim.</li>
-              <li>Cras cras lobortis vitae vivamus ultricies facilisis tempus.</li>
-              <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
-            </ul>
-            <p>
-              Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet velit
-              faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim
-              sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.
-            </p>
-            <h3>How we helped</h3>
-            <p>
-              Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam. Montes,
-              magna cursus nulla feugiat dignissim id lobortis amet. Laoreet sem est phasellus eu proin massa, lectus.
-              Diam rutrum posuere donec ultricies non morbi. Mi a platea auctor mi.
+              Gimana dengan kalian? Apa yang sudah teman-teman persiapkan? Atau masih bingung bagaimana menyiapkannya?
             </p>
             <p>
-              Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique
-              pellentesque. Blandit amet, sed aenean erat arcu morbi.
+              Nah, jika masih bingung, silakan download rencana menyambut ramadhan keluarga kami. Siapa tahu bisa
+              membantu. Kami buat ini jadi dua versi Bahasa inggris dan Bahasa indonesia.
             </p>
           </div>
         </div>
