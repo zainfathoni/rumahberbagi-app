@@ -90,8 +90,9 @@ export const ArticleSection = () => (
           <div className='mt-8 flex text-base max-w-prose mx-auto lg:max-w-none'>
             <div className='rounded-md shadow'>
               <a
-                href='#'
+                href='/files/15-days-countdown-to-ramadhan.pdf'
                 className='w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700'
+                download='15 Days Countdown to Ramadhan.pdf'
               >
                 Download PDF
               </a>
