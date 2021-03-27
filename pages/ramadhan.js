@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { ArticleSection } from '../components/article-section'
+import { DownloadSection } from '../components/download-section'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
 
       <main>
         <ArticleSection />
+        <DownloadSection />
       </main>
     </div>
   )
