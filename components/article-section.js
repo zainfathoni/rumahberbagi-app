@@ -39,7 +39,7 @@ export const ArticleSection = () => (
           </svg>
           <div className='relative text-base mx-auto max-w-prose lg:max-w-none'>
             <figure>
-              <div className='aspect-w-12 aspect-h-7 lg:aspect-none'>
+              <div className='lg:aspect-none'>
                 <Image
                   className='rounded-lg shadow-lg object-cover object-center'
                   src='/images/15-countdown-to-ramadhan.jpeg'
