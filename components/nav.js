@@ -1,22 +1,31 @@
 import * as React from 'react'
 import { Transition } from '@headlessui/react'
+import { useRouter } from 'next/router'
+import Link from 'next/link'
+import { Stopwatch20Icon } from './icons/stopwatch-20'
 
 export const Nav = () => {
   const [isSubmenuOpen, setIsSubmenuOpen] = React.useState(false)
   const [isMobileOpen, setIsMobileOpen] = React.useState(false)
+  const router = useRouter()
+  const isSubmenuActive = router.pathname.startsWith('/downloads')
+
+  React.useEffect(() => {
+    setIsSubmenuOpen(false)
+    setIsMobileOpen(false)
+  }, [router.pathname])
+
   return (
     <header>
       <div className='relative bg-white'>
         <div className='flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8'>
           <div className='flex justify-start lg:w-0 lg:flex-1'>
-            <a href='#'>
-              <span className='sr-only'>Workflow</span>
-              <img
-                className='h-8 w-auto sm:h-10'
-                src='https://tailwindui.com/img/logos/workflow-mark-purple-600-to-indigo-600.svg'
-                alt=''
-              />
-            </a>
+            <Link href='/'>
+              <a>
+                <span className='sr-only'>Rumah Berbagi</span>
+                <img className='h-8 w-auto sm:h-10' src='/rumah-berbagi.svg' alt='' />
+              </a>
+            </Link>
           </div>
           <div className='-mr-2 -my-2 md:hidden'>
             <button
@@ -39,22 +48,33 @@ export const Nav = () => {
             </button>
           </div>
           <nav className='hidden md:flex space-x-10'>
+            <Link href='/#benefit'>
+              <a className='text-base font-medium text-gray-500 hover:text-gray-900'>Benefit</a>
+            </Link>
+            <Link href='/#biaya'>
+              <a href='#' className='text-base font-medium text-gray-500 hover:text-gray-900'>
+                Biaya
+              </a>
+            </Link>
+            <Link href='/#faq'>
+              <a href='#' className='text-base font-medium text-gray-500 hover:text-gray-900'>
+                FAQ
+              </a>
+            </Link>
             <div className='relative'>
-              {/* <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" --> */}
               <button
                 onClick={() => setIsSubmenuOpen(!isSubmenuOpen)}
                 type='button'
-                className='text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                className={`${
+                  isSubmenuActive ? 'text-gray-900' : 'text-gray-500'
+                } group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
                 aria-expanded='false'
               >
-                <span>Solutions</span>
-                {/* <!--
-                Heroicon name: solid/chevron-down
-
-                Item active: "text-gray-600", Item inactive: "text-gray-400"
-              --> */}
+                <span>Downloads</span>
                 <svg
-                  className='text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500'
+                  className={`${
+                    isSubmenuActive ? 'text-gray-600' : 'text-gray-400'
+                  } ml-2 h-5 w-5 group-hover:text-gray-500`}
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 20 20'
                   fill='currentColor'
@@ -80,121 +100,21 @@ export const Nav = () => {
               >
                 <div className='rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden'>
                   <div className='relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2'>
-                    <a href='#' className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
-                      <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12'>
-                        <svg
-                          className='h-6 w-6'
-                          xmlns='http://www.w3.org/2000/svg'
-                          fill='none'
-                          viewBox='0 0 24 24'
-                          stroke='currentColor'
-                          aria-hidden='true'
-                        >
-                          <path
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                            strokeWidth='2'
-                            d='M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4'
-                          />
-                        </svg>
-                      </div>
-                      <div className='ml-4'>
-                        <p className='text-base font-medium text-gray-900'>Inbox</p>
-                        <p className='mt-1 text-sm text-gray-500'>
-                          Get a better understanding of where your traffic is coming from.
-                        </p>
-                      </div>
-                    </a>
-
-                    <a href='#' className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
-                      <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12'>
-                        <svg
-                          className='h-6 w-6'
-                          xmlns='http://www.w3.org/2000/svg'
-                          fill='none'
-                          viewBox='0 0 24 24'
-                          stroke='currentColor'
-                          aria-hidden='true'
-                        >
-                          <path
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                            strokeWidth='2'
-                            d='M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z'
-                          />
-                        </svg>
-                      </div>
-                      <div className='ml-4'>
-                        <p className='text-base font-medium text-gray-900'>Messaging</p>
-                        <p className='mt-1 text-sm text-gray-500'>
-                          Speak directly to your customers in a more meaningful way.
-                        </p>
-                      </div>
-                    </a>
-
-                    <a href='#' className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
-                      <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12'>
-                        <svg
-                          className='h-6 w-6'
-                          xmlns='http://www.w3.org/2000/svg'
-                          fill='none'
-                          viewBox='0 0 24 24'
-                          stroke='currentColor'
-                          aria-hidden='true'
-                        >
-                          <path
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                            strokeWidth='2'
-                            d='M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z'
-                          />
-                        </svg>
-                      </div>
-                      <div className='ml-4'>
-                        <p className='text-base font-medium text-gray-900'>Live Chat</p>
-                        <p className='mt-1 text-sm text-gray-500'>Your customers&#039; data will be safe and secure.</p>
-                      </div>
-                    </a>
-
-                    <a href='#' className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
-                      <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12'>
-                        <svg
-                          className='h-6 w-6'
-                          xmlns='http://www.w3.org/2000/svg'
-                          fill='none'
-                          viewBox='0 0 24 24'
-                          stroke='currentColor'
-                          aria-hidden='true'
-                        >
-                          <path
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                            strokeWidth='2'
-                            d='M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
-                          />
-                        </svg>
-                      </div>
-                      <div className='ml-4'>
-                        <p className='text-base font-medium text-gray-900'>Knowledge Base</p>
-                        <p className='mt-1 text-sm text-gray-500'>
-                          Connect with third-party tools that you&#039;re already using.
-                        </p>
-                      </div>
-                    </a>
+                    <Link href='/downloads/ramadhan-preparation'>
+                      <a className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
+                        <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12'>
+                          <Stopwatch20Icon />
+                        </div>
+                        <div className='ml-4'>
+                          <p className='text-base font-medium text-gray-900'>Ramadhan Preparation</p>
+                          <p className='mt-1 text-sm text-gray-500'>15 Days Countdown to Ramadhan</p>
+                        </div>
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </Transition>
             </div>
-
-            <a href='#' className='text-base font-medium text-gray-500 hover:text-gray-900'>
-              Pricing
-            </a>
-            <a href='#' className='text-base font-medium text-gray-500 hover:text-gray-900'>
-              Partners
-            </a>
-            <a href='#' className='text-base font-medium text-gray-500 hover:text-gray-900'>
-              Company
-            </a>
           </nav>
           <div className='hidden md:flex items-center justify-end md:flex-1 lg:w-0'>
             <a href='#' className='whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900'>
@@ -223,11 +143,7 @@ export const Nav = () => {
             <div className='pt-5 pb-6 px-5'>
               <div className='flex items-center justify-between'>
                 <div>
-                  <img
-                    className='h-8 w-auto'
-                    src='https://tailwindui.com/img/logos/workflow-mark-purple-600-to-indigo-600.svg'
-                    alt='Workflow'
-                  />
+                  <img className='h-8 w-auto' src='/rumah-berbagi.svg' alt='Rumah Berbagi' />
                 </div>
                 <div className='-mr-2'>
                   <button
@@ -251,103 +167,28 @@ export const Nav = () => {
               </div>
               <div className='mt-6'>
                 <nav className='grid grid-cols-1 gap-7'>
-                  <a href='#' className='-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50'>
-                    <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white'>
-                      <svg
-                        className='h-6 w-6'
-                        xmlns='http://www.w3.org/2000/svg'
-                        fill='none'
-                        viewBox='0 0 24 24'
-                        stroke='currentColor'
-                        aria-hidden='true'
-                      >
-                        <path
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          strokeWidth='2'
-                          d='M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4'
-                        />
-                      </svg>
-                    </div>
-                    <div className='ml-4 text-base font-medium text-gray-900'>Inbox</div>
-                  </a>
-
-                  <a href='#' className='-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50'>
-                    <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white'>
-                      <svg
-                        className='h-6 w-6'
-                        xmlns='http://www.w3.org/2000/svg'
-                        fill='none'
-                        viewBox='0 0 24 24'
-                        stroke='currentColor'
-                        aria-hidden='true'
-                      >
-                        <path
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          strokeWidth='2'
-                          d='M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z'
-                        />
-                      </svg>
-                    </div>
-                    <div className='ml-4 text-base font-medium text-gray-900'>Messaging</div>
-                  </a>
-
-                  <a href='#' className='-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50'>
-                    <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white'>
-                      <svg
-                        className='h-6 w-6'
-                        xmlns='http://www.w3.org/2000/svg'
-                        fill='none'
-                        viewBox='0 0 24 24'
-                        stroke='currentColor'
-                        aria-hidden='true'
-                      >
-                        <path
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          strokeWidth='2'
-                          d='M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z'
-                        />
-                      </svg>
-                    </div>
-                    <div className='ml-4 text-base font-medium text-gray-900'>Live Chat</div>
-                  </a>
-
-                  <a href='#' className='-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50'>
-                    <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white'>
-                      <svg
-                        className='h-6 w-6'
-                        xmlns='http://www.w3.org/2000/svg'
-                        fill='none'
-                        viewBox='0 0 24 24'
-                        stroke='currentColor'
-                        aria-hidden='true'
-                      >
-                        <path
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          strokeWidth='2'
-                          d='M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
-                        />
-                      </svg>
-                    </div>
-                    <div className='ml-4 text-base font-medium text-gray-900'>Knowledge Base</div>
-                  </a>
+                  <Link href='/downloads/ramadhan-preparation'>
+                    <a className='-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50'>
+                      <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white'>
+                        <Stopwatch20Icon />
+                      </div>
+                      <div className='ml-4 text-base font-medium text-gray-900'>Ramadhan Preparation</div>
+                    </a>
+                  </Link>
                 </nav>
               </div>
             </div>
             <div className='py-6 px-5'>
               <div className='grid grid-cols-2 gap-4'>
-                <a href='#' className='text-base font-medium text-gray-900 hover:text-gray-700'>
-                  Pricing
-                </a>
-                <a href='#' className='text-base font-medium text-gray-900 hover:text-gray-700'>
-                  Partners
-                </a>
-                <a href='#' className='text-base font-medium text-gray-900 hover:text-gray-700'>
-                  Company
-                </a>
+                <Link href='/#benefit'>
+                  <a className='text-base font-medium text-gray-900 hover:text-gray-700'>Benefit</a>
+                </Link>
+                <Link href='/#biaya'>
+                  <a className='text-base font-medium text-gray-900 hover:text-gray-700'>Biaya</a>
+                </Link>
+                <Link href='/#faq'>
+                  <a className='text-base font-medium text-gray-900 hover:text-gray-700'>FAQ</a>
+                </Link>
               </div>
               <div className='mt-6'>
                 <a
@@ -357,7 +198,7 @@ export const Nav = () => {
                   Sign up
                 </a>
                 <p className='mt-6 text-center text-base font-medium text-gray-500'>
-                  Existing customer?
+                  Existing customer?{' '}
                   <a href='#' className='text-gray-900'>
                     Sign in
                   </a>
