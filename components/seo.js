@@ -3,8 +3,9 @@ import { useRouter } from 'next/router'
 import * as React from 'react'
 
 export const SEO = ({ title: _title, description: _description, image: _image }) => {
-  const title = _title ? `${_title} | Rumah Berbagi` : 'Kelas Rumah Berbagi'
-  const description = _description ?? 'Aplikasi Rumah Berbagi'
+  const title = _title ? `${_title} | Rumah Berbagi` : 'Tahun Prasekolahku | Kelas Rumah Berbagi'
+  const description =
+    _description ?? 'Membangun fondasi pendidikan prasekolah PAUD dan TK dengan dasar-dasar filosofi Charlotte Mason'
   const image = _image ?? '/rumah-berbagi.jpeg'
 
   const router = useRouter()
