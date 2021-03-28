@@ -4,6 +4,14 @@ import { Alert } from './alert'
 
 export const HeroSection = ({ cta: [ctaTitle, ctaHref], menu }) => {
   const [isOpen, setIsOpen] = React.useState(false)
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    alert(
+      'Mohon maaf, sitem pendaftaran peserta masih sedang dalam persiapan. Nantikan pengumuman berikutnya di Instagram @vika.riandini setelah Ramadhan.'
+    )
+  }
+
   return (
     <div className='relative bg-white overflow-hidden'>
       <div className='hidden lg:block lg:absolute lg:inset-0' aria-hidden='true'>
@@ -157,7 +165,7 @@ export const HeroSection = ({ cta: [ctaTitle, ctaHref], menu }) => {
                 <p className='text-base font-medium text-gray-900'>
                   Daftar di sini untuk mendapatkan notifikasi ketika kelas siap diluncurkan.
                 </p>
-                <form action='#' method='POST' className='mt-3 sm:flex'>
+                <form onSubmit={handleSubmit} className='mt-3 sm:flex'>
                   <label htmlFor='email' className='sr-only'>
                     Email
                   </label>
