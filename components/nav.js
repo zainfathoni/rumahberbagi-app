@@ -8,7 +8,6 @@ export const Nav = () => {
   const [isSubmenuOpen, setIsSubmenuOpen] = React.useState(false)
   const [isMobileOpen, setIsMobileOpen] = React.useState(false)
   const router = useRouter()
-  console.log(router)
   const isSubmenuActive = router.pathname.startsWith('/downloads')
 
   React.useEffect(() => {
