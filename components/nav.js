@@ -48,18 +48,8 @@ export const Nav = () => {
             </button>
           </div>
           <nav className='hidden md:flex space-x-10'>
-            <Link href='/#benefit'>
-              <a className='text-base font-medium text-gray-500 hover:text-gray-900'>Benefit</a>
-            </Link>
-            <Link href='/#biaya'>
-              <a href='#' className='text-base font-medium text-gray-500 hover:text-gray-900'>
-                Biaya
-              </a>
-            </Link>
-            <Link href='/#faq'>
-              <a href='#' className='text-base font-medium text-gray-500 hover:text-gray-900'>
-                FAQ
-              </a>
+            <Link href='https://rumahberbagi.com'>
+              <a className='text-base font-medium text-gray-500 hover:text-gray-900'>Blog</a>
             </Link>
             <div className='relative'>
               <button
@@ -179,14 +169,8 @@ export const Nav = () => {
             </div>
             <div className='py-6 px-5'>
               <div className='grid grid-cols-2 gap-4'>
-                <Link href='/#benefit'>
-                  <a className='text-base font-medium text-gray-900 hover:text-gray-700'>Benefit</a>
-                </Link>
-                <Link href='/#biaya'>
-                  <a className='text-base font-medium text-gray-900 hover:text-gray-700'>Biaya</a>
-                </Link>
-                <Link href='/#faq'>
-                  <a className='text-base font-medium text-gray-900 hover:text-gray-700'>FAQ</a>
+                <Link href='https://rumahberbagi.com'>
+                  <a className='text-base font-medium text-gray-900 hover:text-gray-700'>Blog</a>
                 </Link>
               </div>
               <div className='mt-6'>

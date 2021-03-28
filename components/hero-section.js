@@ -1,10 +1,7 @@
-import { Transition } from '@headlessui/react'
 import * as React from 'react'
 import { Alert } from './alert'
 
-export const HeroSection = ({ cta: [ctaTitle, ctaHref], menu }) => {
-  const [isOpen, setIsOpen] = React.useState(false)
-
+export const HeroSection = () => {
   const handleSubmit = (event) => {
     event.preventDefault()
     alert(
