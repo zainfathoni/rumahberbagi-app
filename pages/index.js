@@ -23,14 +23,7 @@ export default function Home() {
       <SEO />
 
       <main>
-        <HeroSection
-          cta={['Daftar', '#daftar']}
-          menu={{
-            Benefit: '#benefit',
-            Biaya: '#biaya',
-            FAQ: '#faq',
-          }}
-        />
+        <HeroSection />
         <BenefitSection title='Didik anak usia prasekolah Anda secara lembut dan terarah'>
           <BenefitDescription>
             Setiap orang tua pasti ingin memberikan pendidikan terbaik bagi anaknya. Di kelas Tahun Prasekolahku ini
