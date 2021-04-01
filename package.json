@@ -3,6 +3,7 @@
   "description": "Kelas Rumah Berbagi",
   "author": "Zain Fathoni <rb@zainf.dev>",
   "version": "0.1.0",
+  "license": "MIT",
   "private": false,
   "engines": {
     "node": ">=14"
@@ -25,6 +26,7 @@
     "@tailwindcss/typography": "0.4.0",
     "autoprefixer": "10.2.5",
     "postcss": "8.2.8",
+    "stylelint": "13.12.0",
     "stylelint-config-recommended": "4.0.0",
     "tailwindcss": "2.0.4"
   },
