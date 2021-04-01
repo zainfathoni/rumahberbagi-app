@@ -3,6 +3,7 @@ import { Transition } from '@headlessui/react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { Stopwatch20Icon } from './icons/stopwatch-20'
+import { SoupIcon } from './icons/soup'
 
 export const Nav = () => {
   const [isSubmenuOpen, setIsSubmenuOpen] = React.useState(false)
@@ -90,14 +91,25 @@ export const Nav = () => {
               >
                 <div className='rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden'>
                   <div className='relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2'>
-                    <Link href='/downloads/ramadhan-preparation'>
+                    <Link href='/downloads/15-days-countdown-to-ramadhan'>
                       <a className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
                         <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12'>
                           <Stopwatch20Icon />
                         </div>
                         <div className='ml-4'>
-                          <p className='text-base font-medium text-gray-900'>Ramadhan Preparation</p>
-                          <p className='mt-1 text-sm text-gray-500'>15 Days Countdown to Ramadhan</p>
+                          <p className='text-base font-medium text-gray-900'>15 Days Countdown to Ramadhan</p>
+                          <p className='mt-1 text-sm text-gray-500'>Ramadhan Preparation</p>
+                        </div>
+                      </a>
+                    </Link>
+                    <Link href='/downloads/rencana-menu-ramadhan'>
+                      <a className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
+                        <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12'>
+                          <SoupIcon />
+                        </div>
+                        <div className='ml-4'>
+                          <p className='text-base font-medium text-gray-900'>Rencana Menu Ramadhan</p>
+                          <p className='mt-1 text-sm text-gray-500'>Ramadhan Preparation</p>
                         </div>
                       </a>
                     </Link>
@@ -156,12 +168,20 @@ export const Nav = () => {
               </div>
               <div className='mt-6'>
                 <nav className='grid grid-cols-1 gap-7'>
-                  <Link href='/downloads/ramadhan-preparation'>
+                  <Link href='/downloads/15-days-countdown-to-ramadhan'>
                     <a className='-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50'>
                       <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white'>
                         <Stopwatch20Icon />
                       </div>
-                      <div className='ml-4 text-base font-medium text-gray-900'>Ramadhan Preparation</div>
+                      <div className='ml-4 text-base font-medium text-gray-900'>15 Days Countdown to Ramadhan</div>
+                    </a>
+                  </Link>
+                  <Link href='/downloads/rencana-menu-ramadhan'>
+                    <a className='-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50'>
+                      <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white'>
+                        <SoupIcon />
+                      </div>
+                      <div className='ml-4 text-base font-medium text-gray-900'>Rencana Menu Ramadhan</div>
                     </a>
                   </Link>
                 </nav>
