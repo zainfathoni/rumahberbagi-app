@@ -14,7 +14,7 @@ export default function Home() {
     <div>
       <SEO
         title='Rencana Menu Ramadhan'
-        description='Demi Ramadhan yang lebih bermakna di tahun ini, kami baru saja membuat rencana 15 hari hitung mundur Ramadhan. Download rencananya di sini.'
+        description='Pusing mau masak apa saja buat sahur dan buka puasa? bingung mau belanja apa buat sebulan ke depan? Coba gunakan meal planner ini yuk!'
         image='/images/rencana-menu-ramadhan.jpeg'
       />
 
@@ -25,7 +25,10 @@ export default function Home() {
           <ArticleFigure src='/images/rencana-menu-ramadhan.jpeg' alt='Rencana menu ramadhan' width={1440} height={973}>
             Rencana Menu Ramadhan
           </ArticleFigure>
-          <ArticleSubtitle>Sesaat lagi Ramadhan tiba.</ArticleSubtitle>
+          <ArticleSubtitle>
+            Pusing mau masak apa saja buat sahur dan buka puasa? bingung mau belanja apa buat sebulan ke depan? Coba
+            gunakan meal planner ini yuk!
+          </ArticleSubtitle>
           <ArticleContent>
             <p>
               Nah, buat teman-teman yang ingin membuat rencana menu makanan ramadhan tapi bingung gimana caranya,
