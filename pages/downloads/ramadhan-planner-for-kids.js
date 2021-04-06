@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import {
   ArticleCategory,
   ArticleContent,
@@ -14,9 +15,9 @@ export default function Home() {
   return (
     <div>
       <SEO
-        title='Rencana Menu Ramadhan'
-        description='Pusing mau masak apa saja buat sahur dan buka puasa? bingung mau belanja apa buat sebulan ke depan? Coba gunakan meal planner ini yuk!'
-        image='/images/rencana-menu-ramadhan.jpeg'
+        title='Ramadhan Planner for Kids (untuk Anak-anak) Tahun 1442H/2021M'
+        description='Bingung mau ngapain aja dengan anak selama Ramadhan? Yuk, gunakan planner ini!'
+        image='/images/ramadhan-planner-for-kids.jpeg'
       />
       <main>
         <ArticleSection>
@@ -31,56 +32,42 @@ export default function Home() {
             Ramadhan Planner for Kids
           </ArticleFigure>
           <ArticleSubtitle>
-            Pusing mau masak apa saja buat sahur dan buka puasa? bingung mau belanja apa buat sebulan ke depan? Coba
-            gunakan meal planner ini yuk!
+            Bingung mau ngapain aja dengan anak selama Ramadhan? Yuk, gunakan planner ini!
           </ArticleSubtitle>
           <ArticleContent>
             <p>
-              Nah, buat teman-teman yang ingin membuat rencana menu makanan ramadhan tapi bingung gimana caranya,
-              silakan gunakan meal planner yang sudah saya buat ini ya. Silakan kalian gunakan sesuai dengan kebutuhan
-              keluarga kalian. Tidak perlu mengikuti rencana makanan kami, kalian tidak perlu memaksa diri menjadi
-              vegetarian (plant based). Gunakan saja mana yang sesuai dengan kalian. Mungkin kalian hanya perlu
-              merencanakan sahur saja atau buka puasa saja. Atau sekedar mencari inspirasi, boleh juga.
+              Ramadhan adalah satu bulan suci yang kehadirannya selalu dinanti. Bagaimana tidak, di bulan ini lah Allah
+              curahkan berkah dan pahala yang berlipat ganda, pintu surga dibuka, pintu neraka ditutup, dan syaitan pun
+              dibelenggu.
             </p>
-            <p>Bagaimana cara menggunakan meal planner ini? Oke, kujelaskan proses yang kulakukan ya.</p>
-            <ol>
-              <li>
-                Cari resep-resep makanan yang simpel dan mudah dieksekusi. Ribet juga nggak papa asal kalian sudah
-                familiar. Belum familiar juga nggak papa sih, yang penting ada panduannya dan kalian yakin itu enak dan
-                disukai keluarga. hehe. 😁
-              </li>
-              <li>
-                Buat daftar menu sahur dan iftar, masing-masing 7. Kenapa 7? Nggak ada alasan aneh-aneh kok. hehe. Biar
-                variatif saja. Selain itu: Anggaplah ramadhan ini genap 30 hari, maka 7 variasi menu ini bisa berulang
-                setidaknya 4 kali (7x4= 28 hari). 2 hari lainnya saya gunakan untuk beli makanan dari luar.
-              </li>
-              <li>
-                Oh ya, sebetulnya, menu ini akan berulang selama 5 minggu. Lho kok jadi 5 minggu? Karena menu ini akan
-                kami mulai dari seminggu sebelum ramadhan agar bisa masak dengan jumlah yang banyak sehingga sebagian
-                bisa dibekukan. Juga untuk latihan agar masak di bulan ramadhan nanti jadi lebih luwes dan cepat.
-              </li>
-              <li>
-                Setelah membuat list menu, buat daftar bahan makanan masing-masing resep, lalu masukkan ke dalam lembar
-                kategori bahan makanan.
-              </li>
-              <li>
-                Untuk sahur, Selalu sediakan sayur yang bisa dimakan mentah seperti selada, paprika, timun, dan tomat,
-                juga buah-buahan. Biar cepat dan sehat kan? 😉
-              </li>
-            </ol>
-            <p>Bagaimana dengan makanan anak-anak?</p>
-            <ul>
-              <li>Menu sarapan anak kami samakan dengan menu sahur.</li>
-              <li>
-                Menu makan siang bisa disamakan dengan menu buka puasa. Nah, bisa juga nih untuk makan siang mereka:
-                bahan-bahan makanan untuk buka puasa dimasak dengan cara lain agar jadi variasi.
-              </li>
-              <li>Sediakan cemilan yang sehat.</li>
-            </ul>
             <p>
-              Buat teman-teman yang ingin menggunakan printable meal planner ini, silakan download di sini ya. Gratis!
+              Tentu sebagai orang tua, kami juga ingin anak-anak kami merasakan keistimewaan bulan Ramadhan. Bahkan
+              sejak pertengahan bulan sya'ban kami sudah bersiap-siap diri menyambut Ramadhan dengan membuat{' '}
+              <Link href='/downloads/15-days-countdown-to-ramadhan'>
+                <a>15 Days Countdown to Ramadhan</a>
+              </Link>
+              . Salah satu hal yang sudah berhasil dilakukan adalah{' '}
+              <Link href='/downloads/rencana-menu-ramadhan'>
+                <a>membuat meal planner Ramadhan</a>
+              </Link>{' '}
+              yang juga kubagikan gratis untuk teman-teman semua.
             </p>
-            <p>It’s my ramadhan gift for you, Moms!</p>
+            <p>
+              Nah, satu hal lain yang perlu banyak dipikirkan dan disiapkan adalah kegiatan anak-anak selama Ramadhan.
+              Kebetulan anak-anak kami masih kecil-kecil (6.5 dan 3.5 tahun). Kami juga tinggal di Singapura, yang
+              muslimnya cukup banyak tetapi bukan mayoritas. Jadi kami ingin mereka juga bisa merasakan Ramadhan adalah
+              bulan yang berbeda, kami ingin bulan suci ini bisa membekas di hati mereka agar tidak kalah dengan
+              perayaan-perayaan agama lain, bahkan kami ingin meninggalkan jejak yang lebih indah dan lebih dalam
+              daripada sekedar kemasan luar yang meriah.
+            </p>
+            <p>
+              Sebetulnya, tahun lalu saya sudah membuat planner Ramadhan untuk anak-anak juga, tapi kali ini saya
+              upgrade versinya dengan cukup banyak perbaikan.
+            </p>
+            <p>
+              Buat kalian yang juga ingin menggunakan planner ini, silakan download di sini ya. Enjoy your Ramadhan
+              journey!
+            </p>
           </ArticleContent>
           <ArticleCTA
             href='/files/ramadhan-planner-for-kids-id.pdf'
