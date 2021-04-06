@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { Stopwatch20Icon } from './icons/stopwatch-20'
 import { SoupIcon } from './icons/soup'
+import { HouseNightIcon } from './icons/house-night'
 
 export const Nav = () => {
   const [isSubmenuOpen, setIsSubmenuOpen] = React.useState(false)
@@ -50,7 +51,13 @@ export const Nav = () => {
           </div>
           <nav className='hidden md:flex space-x-10'>
             <Link href='https://rumahberbagi.com'>
-              <a className='text-base font-medium text-gray-500 hover:text-gray-900'>Blog</a>
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                className='text-base font-medium text-gray-500 hover:text-gray-900'
+              >
+                Blog
+              </a>
             </Link>
             <div className='relative'>
               <button
@@ -109,6 +116,19 @@ export const Nav = () => {
                         </div>
                         <div className='ml-4'>
                           <p className='text-base font-medium text-gray-900'>Rencana Menu Ramadhan</p>
+                          <p className='mt-1 text-sm text-gray-500'>Ramadhan Preparation</p>
+                        </div>
+                      </a>
+                    </Link>
+                    <Link href='/downloads/ramadhan-planner-for-kids-1442h'>
+                      <a className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
+                        <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12'>
+                          <HouseNightIcon />
+                        </div>
+                        <div className='ml-4'>
+                          <p className='text-base font-medium text-gray-900'>
+                            Ramadhan Planner for Kids (untuk Anak-anak) Tahun 1442H/2021M
+                          </p>
                           <p className='mt-1 text-sm text-gray-500'>Ramadhan Preparation</p>
                         </div>
                       </a>
@@ -184,13 +204,29 @@ export const Nav = () => {
                       <div className='ml-4 text-base font-medium text-gray-900'>Rencana Menu Ramadhan</div>
                     </a>
                   </Link>
+                  <Link href='/downloads/ramadhan-planner-for-kids-1442h'>
+                    <a className='-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50'>
+                      <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white'>
+                        <HouseNightIcon />
+                      </div>
+                      <div className='ml-4 text-base font-medium text-gray-900'>
+                        Ramadhan Planner for Kids (untuk Anak-anak) Tahun 1442H/2021M
+                      </div>
+                    </a>
+                  </Link>
                 </nav>
               </div>
             </div>
             <div className='py-6 px-5'>
               <div className='grid grid-cols-2 gap-4'>
                 <Link href='https://rumahberbagi.com'>
-                  <a className='text-base font-medium text-gray-900 hover:text-gray-700'>Blog</a>
+                  <a
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='text-base font-medium text-gray-900 hover:text-gray-700'
+                  >
+                    Blog
+                  </a>
                 </Link>
               </div>
               <div className='mt-6'>

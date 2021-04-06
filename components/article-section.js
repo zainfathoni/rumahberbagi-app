@@ -52,21 +52,31 @@ export const ArticleContent = ({ children }) => (
 )
 
 export const ArticleCTA = ({ children, href, download }) => (
-  <div className='mt-8 flex text-base max-w-prose mx-auto lg:max-w-none'>
-    <div className='rounded-md shadow'>
-      <a
-        href={href}
-        className='w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700'
-        download={download}
-      >
-        {children}
-      </a>
-    </div>
+  <div className='rounded-md shadow'>
+    <a
+      href={href}
+      className='w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700'
+      download={download}
+    >
+      {children}
+    </a>
+  </div>
+)
+
+export const ArticleCTASecondary = ({ children, href, download }) => (
+  <div class='rounded-md shadow ml-4'>
+    <a
+      href={href}
+      className='w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50'
+      download={download}
+    >
+      {children}
+    </a>
   </div>
 )
 
 export const ArticleSection = ({ children }) => {
-  let category, title, figure, subtitle, content, cta
+  let category, title, figure, subtitle, content, cta, ctaSecondary
   React.Children.forEach(children, (child) => {
     switch (child.type) {
       case ArticleCategory:
@@ -87,11 +97,14 @@ export const ArticleSection = ({ children }) => {
       case ArticleCTA:
         cta = child
         break
+      case ArticleCTASecondary:
+        ctaSecondary = child
+        break
     }
   })
 
   return (
-    <div className='bg-white overflow-hidden'>
+    <div className='bg-gray-50 overflow-hidden'>
       <div className='relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8'>
         <div className='hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen'></div>
         <div className='mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none'>
@@ -129,7 +142,10 @@ export const ArticleSection = ({ children }) => {
           <div className='mt-8 lg:mt-0'>
             {subtitle}
             {content}
-            {cta}
+            <div className='mt-8 flex text-base max-w-prose mx-auto lg:max-w-none'>
+              {cta}
+              {ctaSecondary}
+            </div>
           </div>
         </div>
       </div>
