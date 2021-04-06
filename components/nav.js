@@ -114,7 +114,7 @@ export const Nav = () => {
                         </div>
                       </a>
                     </Link>
-                    <Link href='/downloads/ramadhan-planner-for-kids'>
+                    <Link href='/downloads/ramadhan-planner-for-kids-1442h'>
                       <a className='-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50'>
                         <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12'>
                           <HouseNightIcon />
@@ -198,7 +198,7 @@ export const Nav = () => {
                       <div className='ml-4 text-base font-medium text-gray-900'>Rencana Menu Ramadhan</div>
                     </a>
                   </Link>
-                  <Link href='/downloads/ramadhan-planner-for-kids'>
+                  <Link href='/downloads/ramadhan-planner-for-kids-1442h'>
                     <a className='-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50'>
                       <div className='flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white'>
                         <HouseNightIcon />

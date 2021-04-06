@@ -17,19 +17,19 @@ export default function Home() {
       <SEO
         title='Ramadhan Planner for Kids (untuk Anak-anak) Tahun 1442H/2021M'
         description='Bingung mau ngapain aja dengan anak selama Ramadhan? Yuk, gunakan planner ini!'
-        image='/images/ramadhan-planner-for-kids.jpeg'
+        image='/images/ramadhan-planner-for-kids-1442h.jpeg'
       />
       <main>
         <ArticleSection>
           <ArticleCategory>Ramadhan Preparation</ArticleCategory>
           <ArticleTitle>Ramadhan Planner for Kids (untuk Anak-anak) Tahun 1442H/2021M</ArticleTitle>
           <ArticleFigure
-            src='/images/ramadhan-planner-for-kids.jpeg'
-            alt='Ramadhan Planner for Kids'
+            src='/images/ramadhan-planner-for-kids-1442h.jpeg'
+            alt='RRamadhan Planner for Kids (untuk Anak-anak) Tahun 1442H/2021'
             width={1080}
             height={1080}
           >
-            Ramadhan Planner for Kids
+            Ramadhan Planner for Kids (untuk Anak-anak) Tahun 1442H/2021M
           </ArticleFigure>
           <ArticleSubtitle>
             Bingung mau ngapain aja dengan anak selama Ramadhan? Yuk, gunakan planner ini!
@@ -70,13 +70,13 @@ export default function Home() {
             </p>
           </ArticleContent>
           <ArticleCTA
-            href='/files/ramadhan-planner-for-kids-id.pdf'
+            href='/files/ramadhan-planner-for-kids-1442h-id.pdf'
             download='Ramadhan Planner for Kids (Bahasa Indonesia).pdf'
           >
             Download PDF (Bahasa Indonesia)
           </ArticleCTA>
           <ArticleCTASecondary
-            href='/files/ramadhan-planner-for-kids-en.pdf'
+            href='/files/ramadhan-planner-for-kids-1442h-en.pdf'
             download='Ramadhan Planner for Kids (English).pdf'
           >
             Download PDF (Bahasa Inggris)
