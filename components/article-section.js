@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Image from 'next/image'
+import { analytics } from '../utils/firebase'
 
 export const ArticleCategory = ({ children }) => (
   <h2 className='text-base text-indigo-600 font-semibold tracking-wide uppercase'>{children}</h2>
@@ -51,12 +52,15 @@ export const ArticleContent = ({ children }) => (
   </div>
 )
 
+const logFileDownload = (fileName) => analytics().logEvent('file_download', { file_name: fileName })
+
 export const ArticleCTA = ({ children, href, download }) => (
   <div className='rounded-md shadow'>
     <a
       href={href}
       className='w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700'
       download={download}
+      onClick={() => logFileDownload(download)}
     >
       {children}
     </a>
@@ -69,6 +73,7 @@ export const ArticleCTASecondary = ({ children, href, download }) => (
       href={href}
       className='w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50'
       download={download}
+      onClick={() => logFileDownload(download)}
     >
       {children}
     </a>
