@@ -64,7 +64,7 @@ export const ArticleCTA = ({ children, href, download }) => (
 )
 
 export const ArticleCTASecondary = ({ children, href, download }) => (
-  <div class='rounded-md shadow ml-4'>
+  <div className='rounded-md shadow ml-4'>
     <a
       href={href}
       className='w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50'
