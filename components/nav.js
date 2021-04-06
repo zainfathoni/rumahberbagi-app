@@ -51,7 +51,13 @@ export const Nav = () => {
           </div>
           <nav className='hidden md:flex space-x-10'>
             <Link href='https://rumahberbagi.com'>
-              <a className='text-base font-medium text-gray-500 hover:text-gray-900'>Blog</a>
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                className='text-base font-medium text-gray-500 hover:text-gray-900'
+              >
+                Blog
+              </a>
             </Link>
             <div className='relative'>
               <button
@@ -214,7 +220,13 @@ export const Nav = () => {
             <div className='py-6 px-5'>
               <div className='grid grid-cols-2 gap-4'>
                 <Link href='https://rumahberbagi.com'>
-                  <a className='text-base font-medium text-gray-900 hover:text-gray-700'>Blog</a>
+                  <a
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='text-base font-medium text-gray-900 hover:text-gray-700'
+                  >
+                    Blog
+                  </a>
                 </Link>
               </div>
               <div className='mt-6'>
