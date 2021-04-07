@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { Stopwatch20Icon } from './icons/stopwatch-20'
 import { SoupIcon } from './icons/soup'
 import { HouseNightIcon } from './icons/house-night'
+import Image from 'next/image'
 
 export const Nav = () => {
   const [isSubmenuOpen, setIsSubmenuOpen] = React.useState(false)
@@ -25,7 +26,7 @@ export const Nav = () => {
             <Link href='/'>
               <a>
                 <span className='sr-only'>Rumah Berbagi</span>
-                <img className='h-8 w-auto sm:h-10' src='/rumah-berbagi.svg' alt='' />
+                <Image className='h-8 w-auto sm:h-10' src='/rumah-berbagi.svg' alt='' height={32} width={32} />
               </a>
             </Link>
           </div>
