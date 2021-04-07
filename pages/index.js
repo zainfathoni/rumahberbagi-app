@@ -33,7 +33,14 @@ export default function Home() {
           <BenefitTopContainer
             title='Ikuti kelas dengan mudah'
             description='Sarana kelas yang nyaman untuk diikuti dan dirujuk kembali di kemudian hari'
-            image={<BenefitContainerImage src='https://tailwindui.com/img/features/feature-example-1.png' alt='' />}
+            image={
+              <BenefitContainerImage
+                src='/images/planner-preview.jpeg'
+                alt='Halaman perencanaan'
+                height={1280}
+                width={937}
+              />
+            }
           >
             <BenefitItem icon={<FileInvoiceIcon />} title='Handout berupa catatan bergambar'>
               Catatan bergambar (Sketch Note) yang nyaman dibaca untuk dirujuk kembali di kemudian hari.
@@ -48,7 +55,14 @@ export default function Home() {
           <BenefitBottomContainer
             title='Interaksi dua arah'
             description='Kelas interaktif dengan umpan balik langsung dari saya'
-            image={<BenefitContainerImage src='https://tailwindui.com/img/features/feature-example-2.png' alt='' />}
+            image={
+              <BenefitContainerImage
+                src='/images/interaction-preview.jpeg'
+                alt='Materi interaksi di kelas'
+                height={959}
+                width={1280}
+              />
+            }
           >
             <BenefitItem icon={<ChalkboardTeacherIcon />} title='Langsung dan intensif'>
               Interaksi langsung di dalam kelas melalui Google Meet. Ukuran kelas yang kecil memungkinkan proses diskusi

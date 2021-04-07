@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Image from 'next/image'
 
 export const BenefitDescription = ({ children }) => (
   <p className='mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500'>{children}</p>
@@ -79,8 +80,8 @@ export const BenefitBottomContainer = ({ children, title, description, image }) 
   </div>
 )
 
-export const BenefitContainerImage = ({ src, alt }) => (
-  <img className='relative mx-auto' width='490' src={src} alt={alt} />
+export const BenefitContainerImage = ({ src, alt, height, width }) => (
+  <Image className='relative mx-auto' src={src} alt={alt} height={height} width={width} />
 )
 
 export const BenefitItem = ({ icon, title, children }) => (
