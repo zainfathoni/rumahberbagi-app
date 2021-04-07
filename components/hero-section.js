@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Alert } from './alert'
+import Image from 'next/image'
 
 export const HeroSection = () => {
   const handleSubmit = (event) => {
@@ -7,6 +8,10 @@ export const HeroSection = () => {
     alert(
       'Mohon maaf, sitem pendaftaran peserta masih sedang dalam persiapan. Nantikan pengumuman berikutnya di Instagram @vika.riandini setelah Ramadhan.'
     )
+  }
+
+  const handleWatchVideo = () => {
+    window.open('https://rbagi.id/youtube', '_blank')
   }
 
   return (
@@ -113,12 +118,15 @@ export const HeroSection = () => {
                 <button
                   type='button'
                   className='relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                  onClick={handleWatchVideo}
                 >
                   <span className='sr-only'>Tonton video ini untuk mengetahui lebih lanjut</span>
-                  <img
+                  <Image
                     className='w-full'
-                    src='https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-                    alt=''
+                    src='/images/tahun-prasekolahku-video-preview.jpeg'
+                    alt='Tahun Prasekolahku Video Preview'
+                    height={959}
+                    width={1280}
                   />
                   <div className='absolute inset-0 w-full h-full flex items-center justify-center' aria-hidden='true'>
                     <svg className='h-20 w-20 text-indigo-500' fill='currentColor' viewBox='0 0 84 84'>
