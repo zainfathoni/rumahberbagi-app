@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export const ChalkboardTeacherIcon = () => (
+export const ChalkboardTeacherIcon = (): JSX.Element => (
   <svg
     className="h-6 w-6"
     aria-hidden="true"
