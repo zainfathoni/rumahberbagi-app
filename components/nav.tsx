@@ -7,7 +7,7 @@ import { SoupIcon } from "./icons/soup";
 import { HouseNightIcon } from "./icons/house-night";
 import Image from "next/image";
 
-export const Nav = () => {
+export const Nav = (): JSX.Element => {
   const [isSubmenuOpen, setIsSubmenuOpen] = React.useState(false);
   const [isMobileOpen, setIsMobileOpen] = React.useState(false);
   const router = useRouter();

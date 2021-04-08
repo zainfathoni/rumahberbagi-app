@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export const Alert = () => (
+export const Alert = (): JSX.Element => (
   <div className="rounded-md bg-yellow-50 p-4">
     <div className="flex">
       <div className="flex-shrink-0">
