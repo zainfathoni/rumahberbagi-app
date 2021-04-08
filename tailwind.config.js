@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
@@ -20,3 +19,5 @@ module.exports = {
     require("@tailwindcss/forms"),
   ],
 };
+
+/* eslint @typescript-eslint/no-var-requires:"off" */
