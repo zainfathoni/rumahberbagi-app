@@ -32,7 +32,7 @@ export default function Home() {
             Ramadhan Planner for Kids (untuk Anak-anak) Tahun 1442H/2021M
           </ArticleFigure>
           <ArticleSubtitle>
-            Bingung mau ngapain aja dengan anak selama Ramadhan? Yuk, gunakan planner ini!
+            Bingung mau ngapain aja dengan anak selama Ramadhan? Yuk, gunakan planner ini!
           </ArticleSubtitle>
           <ArticleContent>
             <p>
@@ -42,7 +42,7 @@ export default function Home() {
             </p>
             <p>
               Tentu sebagai orang tua, kami juga ingin anak-anak kami merasakan keistimewaan bulan Ramadhan. Bahkan
-              sejak pertengahan bulan sya'ban kami sudah bersiap-siap diri menyambut Ramadhan dengan membuat{' '}
+              sejak pertengahan bulan sya&apos;ban kami sudah bersiap-siap diri menyambut Ramadhan dengan membuat{' '}
               <Link href='/downloads/15-days-countdown-to-ramadhan'>
                 <a>15 Days Countdown to Ramadhan</a>
               </Link>
