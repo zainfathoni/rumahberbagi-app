@@ -2,11 +2,17 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import * as React from "react";
 
+type SEOProps = {
+  title?: string,
+  description?: string,
+  image?: string
+}
+
 export const SEO = ({
   title: _title,
   description: _description,
   image: _image,
-}) => {
+}: SEOProps): JSX.Element => {
   const title = _title
     ? `${_title} | Rumah Berbagi`
     : "Tahun Prasekolahku | Kelas Rumah Berbagi";
