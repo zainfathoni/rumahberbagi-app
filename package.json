@@ -44,7 +44,7 @@
     "yarn": "1.22.10"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
+    "*.js": "eslint --fix --cache --cache-location node_modules/.cache/eslint",
     "*.css": "stylelint --fix",
     "*.{js,css,md}": "prettier --write"
   }
