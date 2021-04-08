@@ -25,12 +25,8 @@ import { CommentsAltIcon } from "../components/icons/comments-alt";
 import { FileInvoiceIcon } from "../components/icons/file-invoice";
 import { FileSignatureIcon } from "../components/icons/file-signature";
 import { FileVideoIcon } from "../components/icons/file-video";
-import {
-  PricingDescription,
-  PricingIncluded,
-  PricingItem,
-  PricingSection,
-} from "../components/pricing-section";
+import {  Pricing,
+} from "../components/sections/pricing";
 import { SEO } from "../components/seo";
 
 export default function Home(): JSX.Element {
@@ -103,18 +99,18 @@ export default function Home(): JSX.Element {
             </BenefitItem>
           </BenefitBottomContainer>
         </BenefitSection>
-        <PricingSection title="Biaya kelas">
-          <PricingDescription>
+        <Pricing title="Biaya kelas">
+          <Pricing.Description>
             Biaya yang perlu dibayarkan setelah terkonfirmasi sebagai peserta
             kelas
-          </PricingDescription>
-          <PricingIncluded title="Biaya termasuk">
-            <PricingItem>Handout berupa catatan bergambar</PricingItem>
-            <PricingItem>Printable planner</PricingItem>
-            <PricingItem>Akses kelas online melalui Google Meet</PricingItem>
-            <PricingItem>Video rekaman kelas</PricingItem>
-          </PricingIncluded>
-        </PricingSection>
+          </Pricing.Description>
+          <Pricing.Included title="Biaya termasuk">
+            <Pricing.Item>Handout berupa catatan bergambar</Pricing.Item>
+            <Pricing.Item>Printable planner</Pricing.Item>
+            <Pricing.Item>Akses kelas online melalui Google Meet</Pricing.Item>
+            <Pricing.Item>Video rekaman kelas</Pricing.Item>
+          </Pricing.Included>
+        </Pricing>
         <FaqSection title="FAQ (Tanya Jawab)">
           <FaqDescription>
             Tidak menemukan jawaban yang Anda cari? Hubungi saya{" "}
