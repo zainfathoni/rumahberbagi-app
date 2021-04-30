@@ -153,7 +153,7 @@ export default function Home() {
                 Berapa biaya kelas ini? Kapan saya harus membayarnya?
               </FaqQuestion>
               <FaqAnswer>
-                Biaya kelas ini Rp 100.000,- yang dapat dibayarkan setelah Anda
+                Biaya kelas ini Rp 150.000,- yang dapat dibayarkan setelah Anda
                 mendapatkan konfirmasi dari kami bahwa Anda mendapatkan slot
                 untuk bergabung di kelas ini.
               </FaqAnswer>

@@ -87,7 +87,7 @@ export const PricingSection = ({ title, children }) => {
                   <span className="ml-3 text-xl font-medium text-gray-500">
                     Rp
                   </span>
-                  <span>100.000</span>
+                  <span>150.000</span>
                   <span className="ml-3 text-xl font-medium text-gray-500">
                     ,-
                   </span>
