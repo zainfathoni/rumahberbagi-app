@@ -1,13 +1,10 @@
 import * as React from "react";
-import { Alert } from "./alert";
 import Image from "next/image";
 
 export const HeroSection = (): JSX.Element => {
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    alert(
-      "Mohon maaf, sitem pendaftaran peserta masih sedang dalam persiapan. Nantikan pengumuman berikutnya di Instagram @vika.riandini setelah Ramadhan."
-    );
+    window.open("https://rbagi.id/daftar", "_blank");
   };
 
   const handleWatchVideo = () => {
@@ -62,9 +59,6 @@ export const HeroSection = (): JSX.Element => {
         </svg>
       </div>
       <div className="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <Alert />
-        </div>
         <main className="mt-4 mx-auto max-w-7xl px-4 sm:mt-6 sm:px-6 lg:mt-8">
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
@@ -83,34 +77,16 @@ export const HeroSection = (): JSX.Element => {
               </p>
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                 <p className="text-base font-medium text-gray-900">
-                  Daftar di sini untuk mendapatkan notifikasi ketika kelas siap
-                  diluncurkan.
+                  Isi formulir pendaftaran ini ini untuk menyatakan minat Anda.
                 </p>
                 <form onSubmit={handleSubmit} className="mt-3 sm:flex">
-                  <label htmlFor="email" className="sr-only">
-                    Email
-                  </label>
-                  <input
-                    type="text"
-                    name="email"
-                    id="email"
-                    className="block w-full py-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:flex-1 border-gray-300"
-                    placeholder="Masukkan alamat email Anda"
-                  />
                   <button
                     type="submit"
-                    className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
+                    className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
                   >
-                    Kabari saya
+                    Daftar sekarang
                   </button>
                 </form>
-                <p className="mt-3 text-sm text-gray-500">
-                  Kami peduli dengan perlindungan data Anda. Baca{" "}
-                  <a href="#" className="font-medium text-gray-900 underline">
-                    Kebijakan Privasi
-                  </a>{" "}
-                  kami di sini.
-                </p>
               </div>
             </div>
             <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
