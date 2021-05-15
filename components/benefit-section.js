@@ -2,9 +2,7 @@ import * as React from "react";
 import Image from "next/image";
 
 export const BenefitDescription = ({ children }) => (
-  <p className="mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500">
-    {children}
-  </p>
+  <p className="mt-4 max-w-3xl text-xl text-gray-500">{children}</p>
 );
 
 export const BenefitTopContainer = ({
@@ -143,11 +141,13 @@ export const BenefitItem = ({ icon, title, children }) => (
 );
 
 export const BenefitSection = ({ children, title }) => {
-  let top, bottom, description;
+  let top,
+    bottom,
+    descriptions = [];
   React.Children.forEach(children, (child) => {
     switch (child.type) {
       case BenefitDescription:
-        description = child;
+        descriptions.push(child);
         break;
       case BenefitTopContainer:
         top = child;
@@ -196,10 +196,10 @@ export const BenefitSection = ({ children, title }) => {
         </svg>
 
         <div className="relative">
-          <h2 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl max-w-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             {title}
           </h2>
-          {description}
+          {descriptions}
         </div>
 
         {top}

@@ -78,8 +78,8 @@ export const HeroSection = (): JSX.Element => {
                 </span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                Membangun fondasi pendidikan prasekolah PAUD dan TK dengan
-                dasar-dasar filosofi Charlotte Mason
+                Membangun fondasi pendidikan prasekolah PAUD dan TK, menguatkan
+                akar masa depan dengan dasar-dasar filosofi Charlotte Mason
               </p>
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                 <p className="text-base font-medium text-gray-900">
