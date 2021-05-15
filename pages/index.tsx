@@ -130,7 +130,7 @@ export default function Home(): JSX.Element {
           <Pricing.Included title="Biaya termasuk">
             <Pricing.Item>Handout berupa catatan bergambar</Pricing.Item>
             <Pricing.Item>Printable planner</Pricing.Item>
-            <PricingItem>Akses kelas online melalui Zoom</PricingItem>
+            <Pricing.Item>Akses kelas online melalui Zoom</Pricing.Item>
             <Pricing.Item>Video rekaman kelas</Pricing.Item>
           </Pricing.Included>
         </Pricing>
