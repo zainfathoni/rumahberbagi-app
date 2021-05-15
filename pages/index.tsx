@@ -96,7 +96,7 @@ export default function Home(): JSX.Element {
           </BenefitTopContainer>
           <BenefitBottomContainer
             title="Interaksi dua arah"
-            description="Kelas ini akan berlangsung secara interaktif. Saya akan ajak teman-teman untuk menyelami materi secara langsung dengan:"
+            description="Saya akan ajak teman-teman untuk menyelami materi dengan:"
             image={
               <BenefitContainerImage
                 src="/images/interaction-preview.jpeg"
@@ -111,26 +111,26 @@ export default function Home(): JSX.Element {
               title="Langsung dan intensif"
             >
               Interaksi langsung di dalam kelas melalui Zoom. Ukuran kelas yang
-              kecil memungkinkan proses diskusi yang mendalam di dalam kelas.
+              kecil memungkinkan proses diskusi yang mendalam.
             </BenefitItem>
             <BenefitItem
               icon={<CommentsAltIcon />}
               title="Demonstrasi dan diskusi"
             >
-              Demonstrasi pengisian lembar perencanaan yang telah disediakan
-              disertai dengan diskusi dan tanya jawab.
+              Saya akan mendemonstrasikan pengisian lembar perencanaan yang
+              telah disediakan disertai dengan diskusi dan tanya jawab.
             </BenefitItem>
           </BenefitBottomContainer>
         </BenefitSection>
         <Pricing title="Biaya kelas">
           <Pricing.Description>
-            Biaya yang perlu dibayarkan setelah terkonfirmasi sebagai peserta
+            Biaya baru dibayarkan setelah Anda terkonfirmasi sebagai peserta
             kelas
           </Pricing.Description>
           <Pricing.Included title="Biaya termasuk">
             <Pricing.Item>Handout berupa catatan bergambar</Pricing.Item>
             <Pricing.Item>Printable planner</Pricing.Item>
-            <Pricing.Item>Akses kelas online melalui Google Meet</Pricing.Item>
+            <PricingItem>Akses kelas online melalui Zoom</PricingItem>
             <Pricing.Item>Video rekaman kelas</Pricing.Item>
           </Pricing.Included>
         </Pricing>
@@ -179,7 +179,7 @@ export default function Home(): JSX.Element {
             </div>
             <div>
               <Faq.Question>
-                Mengapa jumlah peserta hanya dibatasi sebanyak 20 orang?
+                Mengapa jumlah peserta hanya dibatasi sebanyak 30 orang?
               </Faq.Question>
               <Faq.Answer>
                 Supaya proses belajar bisa lebih fokus dan aktivitas tanya jawab
@@ -202,10 +202,7 @@ export default function Home(): JSX.Element {
         </Faq>
         <CtaSection>
           <CtaTitle>Tahun Prasekolahku</CtaTitle>
-          <CtaDescription>
-            Kursus membangun pondasi pendidikan prasekolah PAUD dan TK dengan
-            dasar-dasar filosofi Charlotte Mason
-          </CtaDescription>
+          <CtaDescription>Anda berminat?</CtaDescription>
           <CtaButton>Daftar sekarang</CtaButton>
         </CtaSection>
       </main>
