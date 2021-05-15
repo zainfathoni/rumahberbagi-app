@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export const Stopwatch20Icon = () => (
+export const Stopwatch20Icon = (): JSX.Element => (
   <svg
     className="h-6 w-6"
     aria-hidden="true"

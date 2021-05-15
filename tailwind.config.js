@@ -19,3 +19,5 @@ module.exports = {
     require("@tailwindcss/forms"),
   ],
 };
+
+/* eslint @typescript-eslint/no-var-requires:"off" */

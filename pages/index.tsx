@@ -12,28 +12,18 @@ import {
   CtaDescription,
   CtaTitle,
 } from "../components/cta-section";
-import {
-  FaqAnswer,
-  FaqDescription,
-  FaqContent,
-  FaqQuestion,
-  FaqSection,
-} from "../components/faq-section";
+import { Faq } from "../components/faq-section";
 import { HeroSection } from "../components/hero-section";
 import { ChalkboardTeacherIcon } from "../components/icons/chalkboard-teacher";
 import { CommentsAltIcon } from "../components/icons/comments-alt";
 import { FileInvoiceIcon } from "../components/icons/file-invoice";
 import { FileSignatureIcon } from "../components/icons/file-signature";
 import { FileVideoIcon } from "../components/icons/file-video";
-import {
-  PricingDescription,
-  PricingIncluded,
-  PricingItem,
-  PricingSection,
-} from "../components/pricing-section";
+import {  Pricing,
+} from "../components/sections/pricing";
 import { SEO } from "../components/seo";
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <div>
       <SEO />
@@ -103,20 +93,20 @@ export default function Home() {
             </BenefitItem>
           </BenefitBottomContainer>
         </BenefitSection>
-        <PricingSection title="Biaya kelas">
-          <PricingDescription>
+        <Pricing title="Biaya kelas">
+          <Pricing.Description>
             Biaya yang perlu dibayarkan setelah terkonfirmasi sebagai peserta
             kelas
-          </PricingDescription>
-          <PricingIncluded title="Biaya termasuk">
-            <PricingItem>Handout berupa catatan bergambar</PricingItem>
-            <PricingItem>Printable planner</PricingItem>
-            <PricingItem>Akses kelas online melalui Google Meet</PricingItem>
-            <PricingItem>Video rekaman kelas</PricingItem>
-          </PricingIncluded>
-        </PricingSection>
-        <FaqSection title="FAQ (Tanya Jawab)">
-          <FaqDescription>
+          </Pricing.Description>
+          <Pricing.Included title="Biaya termasuk">
+            <Pricing.Item>Handout berupa catatan bergambar</Pricing.Item>
+            <Pricing.Item>Printable planner</Pricing.Item>
+            <Pricing.Item>Akses kelas online melalui Google Meet</Pricing.Item>
+            <Pricing.Item>Video rekaman kelas</Pricing.Item>
+          </Pricing.Included>
+        </Pricing>
+        <Faq title="FAQ (Tanya Jawab)">
+          <Faq.Description>
             Tidak menemukan jawaban yang Anda cari? Hubungi saya{" "}
             <a
               href="https://www.instagram.com/vika.riandini/"
@@ -127,60 +117,60 @@ export default function Home() {
               melalui Instagram
             </a>
             .
-          </FaqDescription>
-          <FaqContent>
+          </Faq.Description>
+          <Faq.Content>
             <div>
-              <FaqQuestion>Kelas ini untuk siapa?</FaqQuestion>
-              <FaqAnswer>
+              <Faq.Question>Kelas ini untuk siapa?</Faq.Question>
+              <Faq.Answer>
                 Kelas ini untuk para orang tua, khususnya untuk anak di bawah
                 usia sekolah, tetapi tidak menutup kemungkinan orang tua dengan
                 anak di usia sekolah masih membutuhkannya karena bisa jadi ada
                 aspek yang terlewat dari fondasi yang harus dipersiapkan di usia
                 prasekolah.
-              </FaqAnswer>
+              </Faq.Answer>
             </div>
             <div>
-              <FaqQuestion>Berapa lama kelas ini akan berlangsung?</FaqQuestion>
-              <FaqAnswer>
+              <Faq.Question>Berapa lama kelas ini akan berlangsung?</Faq.Question>
+              <Faq.Answer>
                 Setidaknya akan ada dua pertemuan yang terdiri dari pembahasan
                 materi dan praktik pembuatan rencana pendidikan untuk anak
                 prasekolah. Tidak menutup kemungkinan jumlah pertemuan akan
                 ditambah sesuai dengan kebutuhan.
-              </FaqAnswer>
+              </Faq.Answer>
             </div>
             <div>
-              <FaqQuestion>
+              <Faq.Question>
                 Berapa biaya kelas ini? Kapan saya harus membayarnya?
-              </FaqQuestion>
-              <FaqAnswer>
+              </Faq.Question>
+              <Faq.Answer>
                 Biaya kelas ini Rp 150.000,- yang dapat dibayarkan setelah Anda
                 mendapatkan konfirmasi dari kami bahwa Anda mendapatkan slot
                 untuk bergabung di kelas ini.
-              </FaqAnswer>
+              </Faq.Answer>
             </div>
             <div>
-              <FaqQuestion>
+              <Faq.Question>
                 Mengapa jumlah peserta hanya dibatasi sebanyak 20 orang?
-              </FaqQuestion>
-              <FaqAnswer>
+              </Faq.Question>
+              <Faq.Answer>
                 Supaya proses belajar bisa lebih fokus dan aktivitas tanya jawab
                 bisa dilakukan secara lebih intensif.
-              </FaqAnswer>
+              </Faq.Answer>
             </div>
             <div>
-              <FaqQuestion>
+              <Faq.Question>
                 Saya gagal mendapatkan slot di kelas ini. Lantas bagaimana saya
                 bisa mengikuti kelas ini?
-              </FaqQuestion>
-              <FaqAnswer>
+              </Faq.Question>
+              <Faq.Answer>
                 Pertama-tama, pastikan dulu bahwa Anda telah terdaftar ke dalam
                 daftar antrian calon peserta. Apabila kelas untuk angkatan
                 berikutnya telah kami buka, kami akan kirimkan email kepada Anda
                 berdasarkan urutan antrian Anda.
-              </FaqAnswer>
+              </Faq.Answer>
             </div>
-          </FaqContent>
-        </FaqSection>
+          </Faq.Content>
+        </Faq>
         <CtaSection>
           <CtaTitle>Tahun Prasekolahku</CtaTitle>
           <CtaDescription>

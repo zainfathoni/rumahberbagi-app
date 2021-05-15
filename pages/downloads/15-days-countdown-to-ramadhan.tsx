@@ -9,7 +9,7 @@ import {
 } from "../../components/article-section";
 import { SEO } from "../../components/seo";
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <div>
       <SEO

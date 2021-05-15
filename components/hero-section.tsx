@@ -2,8 +2,8 @@ import * as React from "react";
 import { Alert } from "./alert";
 import Image from "next/image";
 
-export const HeroSection = () => {
-  const handleSubmit = (event) => {
+export const HeroSection = (): JSX.Element => {
+  const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
     alert(
       "Mohon maaf, sitem pendaftaran peserta masih sedang dalam persiapan. Nantikan pengumuman berikutnya di Instagram @vika.riandini setelah Ramadhan."

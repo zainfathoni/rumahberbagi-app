@@ -1,10 +1,16 @@
 import * as React from "react";
 
-export const PricingDescription = ({ children }) => (
+type DescriptionProps = {
+  children: string
+}
+const Description = ({ children }: DescriptionProps): JSX.Element => (
   <p className="mt-4 text-xl text-gray-600">{children}</p>
 );
 
-export const PricingItem = ({ children }) => (
+type ItemProps = {
+  children: string
+}
+const Item = ({ children }: ItemProps): JSX.Element => (
   <li className="flex items-start lg:col-span-1">
     <div className="flex-shrink-0">
       <svg
@@ -25,7 +31,11 @@ export const PricingItem = ({ children }) => (
   </li>
 );
 
-export const PricingIncluded = ({ title, children }) => (
+type IncludedProps = {
+  title: string,
+  children: React.ReactNode // TODO: Allow Item type only
+}
+const Included = ({ title, children }: IncludedProps): JSX.Element => (
   <div className="mt-8">
     <div className="flex items-center">
       <h4 className="flex-shrink-0 pr-4 bg-white text-sm tracking-wider font-semibold uppercase text-indigo-600">
@@ -39,14 +49,18 @@ export const PricingIncluded = ({ title, children }) => (
   </div>
 );
 
-export const PricingSection = ({ title, children }) => {
+type PricingProps = {
+  title: string,
+  children: React.ReactNode // TODO: Allow Description and Included types only
+}
+export const Pricing = ({ title, children }: PricingProps): JSX.Element => {
   let description, included;
-  React.Children.forEach(children, (child) => {
+  React.Children.forEach(children, (child: React.ReactElement) => {
     switch (child.type) {
-      case PricingDescription:
+      case Description:
         description = child;
         break;
-      case PricingIncluded:
+      case Included:
         included = child;
         break;
     }
@@ -120,3 +134,7 @@ export const PricingSection = ({ title, children }) => {
     </div>
   );
 };
+
+Pricing.Description = Description
+Pricing.Item = Item
+Pricing.Included = Included

@@ -1,29 +1,45 @@
 import * as React from "react";
 
-export const FaqDescription = ({ children }) => (
+type DescriptionProps = {
+  children: React.ReactNode
+}
+const Description = ({ children }: DescriptionProps): JSX.Element => (
   <p className="mt-4 text-lg text-gray-500">{children}</p>
 );
 
-export const FaqContent = ({ children }) => (
+type ContentProps = {
+  children: React.ReactNode
+}
+const Content = ({ children }: ContentProps): JSX.Element => (
   <dl className="space-y-12">{children}</dl>
 );
 
-export const FaqQuestion = ({ children }) => (
+type QuestionProps = {
+  children: string
+}
+const Question = ({ children }: QuestionProps): JSX.Element => (
   <dt className="text-lg leading-6 font-medium text-gray-900">{children}</dt>
 );
 
-export const FaqAnswer = ({ children }) => (
+type AnswerProps = {
+  children: string
+}
+const Answer = ({ children }: AnswerProps): JSX.Element => (
   <dd className="mt-2 text-base text-gray-500">{children}</dd>
 );
 
-export const FaqSection = ({ title, children }) => {
+type FaqProps = {
+  title: string,
+  children: React.ReactNode
+}
+export const Faq = ({ title, children }: FaqProps): JSX.Element => {
   let description, qa;
-  React.Children.forEach(children, (child) => {
+  React.Children.forEach(children, (child: React.ReactElement) => {
     switch (child.type) {
-      case FaqDescription:
+      case Description:
         description = child;
         break;
-      case FaqContent:
+      case Content:
         qa = child;
         break;
     }
@@ -42,3 +58,8 @@ export const FaqSection = ({ title, children }) => {
     </div>
   );
 };
+
+Faq.Description = Description
+Faq.Content = Content
+Faq.Question = Question
+Faq.Answer = Answer

@@ -1,3 +1,4 @@
+import type { AppProps } from 'next/app'
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { Nav } from "../components/nav";
@@ -5,7 +6,7 @@ import "../styles/globals.css";
 import "../styles/fonts.css";
 import { analytics } from "../utils/firebase";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   const router = useRouter();
 
   useEffect(() => {
