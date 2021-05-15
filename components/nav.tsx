@@ -162,11 +162,6 @@ export const Nav = (): JSX.Element => {
             </div>
           </nav>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <Link href="/">
-              <a className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-                Masuk
-              </a>
-            </Link>
             <Link href="/#daftar">
               <a className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700">
                 Daftar
@@ -274,12 +269,6 @@ export const Nav = (): JSX.Element => {
                     Daftar
                   </a>
                 </Link>
-                <p className="mt-6 text-center text-base font-medium text-gray-500">
-                  Sudah terdaftar?{" "}
-                  <Link href="/">
-                    <a className="text-gray-900">Masuk</a>
-                  </Link>
-                </p>
               </div>
             </div>
           </div>

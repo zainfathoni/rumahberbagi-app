@@ -90,7 +90,7 @@ export default function Home(): JSX.Element {
               icon={<WhatsAppIcon />}
               title="Grup WhatsApp sementara"
             >
-              Saya akan buatkan grup WA sementara selama 1 bulan, untuk sarana
+              Saya akan buatkan grup WhatsApp sementara selama 1 bulan, untuk sarana
               berdiskusi jika ada hal-hal yang masih ingin ditanyakan.
             </BenefitItem>
           </BenefitTopContainer>
