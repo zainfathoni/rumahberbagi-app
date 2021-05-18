@@ -77,12 +77,12 @@ export const HeroSection = (): JSX.Element => {
               </p>
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                 <p className="text-base font-medium text-gray-900">
-                  Isi formulir pendaftaran ini ini untuk menyatakan minat Anda.
+                  Isi formulir pendaftaran ini untuk menyatakan minat Anda.
                 </p>
                 <form onSubmit={handleSubmit} className="mt-3 sm:flex">
                   <button
                     type="submit"
-                    className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
+                    className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto mx-auto lg:mx-0"
                   >
                     Daftar sekarang
                   </button>
