@@ -118,7 +118,7 @@ export const BenefitBottomContainer = ({
 
 export const BenefitContainerImage = ({ src, alt, height, width }) => (
   <Image
-    className="relative mx-auto"
+    className="relative mx-auto rounded-xl"
     src={src}
     alt={alt}
     height={height}
