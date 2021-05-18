@@ -22,12 +22,11 @@ export const Alert = (): JSX.Element => (
         <h3 className="text-sm font-medium text-yellow-800">Perhatian</h3>
         <div className="mt-2 text-sm text-yellow-700">
           <p>
-            Materi kelas dan sistem pendaftaran peserta masih sedang dalam
-            persiapan. Nantikan pengumuman berikutnya di Instagram{" "}
+            Mohon maaf, pendaftaran sudah ditutup. Nantikan pengumuman berikutnya di Instagram{" "}
             <a href="https://www.instagram.com/vika.riandini/">
               @vika.riandini
             </a>{" "}
-            setelah Ramadhan.
+            untuk gelombang pendaftaran berikutnya. Terima kasih.
           </p>
         </div>
       </div>

@@ -12,11 +12,7 @@ export const CtaDescription = ({ children }) => (
 );
 
 export const CtaButton = ({ children }) => (
-  <Link
-    href="https://rbagi.id/daftar"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
+  <Link href="#">
     <a className="mt-8 bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-indigo-600 hover:bg-indigo-50">
       {children}
     </a>
