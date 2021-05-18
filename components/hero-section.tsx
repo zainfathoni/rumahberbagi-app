@@ -8,7 +8,7 @@ export const HeroSection = (): JSX.Element => {
   };
 
   const handleWatchVideo = () => {
-    window.open("https://rbagi.id/youtube", "_blank");
+    window.open("https://rbagi.id/video-tahun-prasekolahku", "_blank");
   };
 
   return (
