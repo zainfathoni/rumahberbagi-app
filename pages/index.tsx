@@ -20,6 +20,7 @@ import { FileInvoiceIcon } from "../components/icons/file-invoice";
 import { FileSignatureIcon } from "../components/icons/file-signature";
 import { FileVideoIcon } from "../components/icons/file-video";
 import { WhatsAppIcon } from "../components/icons/whatsapp";
+import { Content } from "../components/sections/content";
 import { Pricing } from "../components/sections/pricing";
 import { SEO } from "../components/seo";
 
@@ -122,6 +123,24 @@ export default function Home(): JSX.Element {
             </BenefitItem>
           </BenefitBottomContainer>
         </BenefitSection>
+        <Content title='Kisi-kisi materi'>
+          <Content.Item>Sekilas filosofi Charlotte Mason</Content.Item>
+          <Content.Item>Tugas utama orang tua</Content.Item>
+          <Content.Item>Prioritas pendidikan anak prasekolah (PAUD dan TK)</Content.Item>
+          <Content.Item>Kebutuhan fisik</Content.Item>
+          <Content.Item>Kunci kebiasaan baik</Content.Item>
+          <Content.Item>Bermain bebas dan mengasah 5 indera</Content.Item>
+          <Content.Item>Outdoor life</Content.Item>
+          <Content.Item>Membangun ikatan dengan alam</Content.Item>
+          <Content.Item>Buku dan cerita</Content.Item>
+          <Content.Item>Bahasa</Content.Item>
+          <Content.Item>Kehidupan spiritual </Content.Item>
+          <Content.Item>Seni</Content.Item>
+          <Content.Item>Tahap pramembaca</Content.Item>
+          <Content.Item>Berhitung</Content.Item>
+          <Content.Item>Menulis</Content.Item>
+          <Content.Item>Pengisian planner</Content.Item>
+        </Content>
         <Pricing title="Biaya kelas">
           <Pricing.Description>
             Biaya baru dibayarkan setelah Anda terkonfirmasi sebagai peserta
