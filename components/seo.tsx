@@ -18,7 +18,7 @@ export const SEO = ({
     : "Tahun Prasekolahku | Kelas Rumah Berbagi";
   const description =
     _description ??
-    "Membangun fondasi pendidikan prasekolah PAUD dan TK dengan dasar-dasar filosofi Charlotte Mason";
+    "Membangun fondasi pendidikan prasekolah PAUD dan TK, menguatkan akar masa depan dengan dasar-dasar filosofi Charlotte Mason";
   const image = _image ?? "/rumah-berbagi.jpeg";
 
   const router = useRouter();

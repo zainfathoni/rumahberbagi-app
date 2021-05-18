@@ -12,7 +12,11 @@ export const CtaDescription = ({ children }) => (
 );
 
 export const CtaButton = ({ children }) => (
-  <Link href="/#">
+  <Link
+    href="https://rbagi.id/daftar"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <a className="mt-8 bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-indigo-600 hover:bg-indigo-50">
       {children}
     </a>
@@ -26,10 +30,10 @@ export const CtaSection = ({ children }) => (
         <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
           <div className="lg:self-center">{children}</div>
         </div>
-        <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
+        <div className="-mt-6 aspect-w-5 aspect-h-4">
           <img
-            className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
-            src="/images/contoh-handout.jpeg"
+            className="transform lg:-translate-x-20 lg:translate-y-20 rounded-md object-cover object-left-top"
+            src="/images/foto-vika.jpeg"
             alt="Contoh handout"
           />
         </div>

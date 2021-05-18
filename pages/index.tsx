@@ -19,8 +19,10 @@ import { CommentsAltIcon } from "../components/icons/comments-alt";
 import { FileInvoiceIcon } from "../components/icons/file-invoice";
 import { FileSignatureIcon } from "../components/icons/file-signature";
 import { FileVideoIcon } from "../components/icons/file-video";
-import {  Pricing,
-} from "../components/sections/pricing";
+import { WhatsAppIcon } from "../components/icons/whatsapp";
+import { Content } from "../components/sections/content";
+import { Pricing } from "../components/sections/pricing";
+import { Timeline } from "../components/sections/timeline";
 import { SEO } from "../components/seo";
 
 export default function Home(): JSX.Element {
@@ -30,16 +32,35 @@ export default function Home(): JSX.Element {
 
       <main>
         <HeroSection />
-        <BenefitSection title="Didik anak usia prasekolah Anda secara lembut dan terarah">
+        <BenefitSection title="Mendidik anak usia Prasekolah dengan lembut, bahagia, dan cinta">
           <BenefitDescription>
-            Setiap orang tua pasti ingin memberikan pendidikan terbaik bagi
-            anaknya. Di kelas Tahun Prasekolahku ini Anda akan diarahkan untuk
-            mendidik anak Anda di usia prasekolah. Berikut benefit yang akan
-            Anda dapatkan sebagai peserta kelas ini.
+            Menjadi seorang ibu baru dengan anak usia prasekolah adalah satu
+            pekerjaan yang menantang. Kita tidak sedang membesarkan tanaman atau
+            hewan, tetapi manusia dengan segala fitrah, kemampuan, dan
+            potensinya yang terus berkembang. Kita berharap, mereka lahir
+            lengkap dengan buku manual. Tetapi tidak, kita belajar sambil
+            sekaligus membesarkannya. Tidak heran jika ini membuat para ibu
+            merasa kelelahan dan kebingungan.
+          </BenefitDescription>
+          <BenefitDescription>
+            Masa-masa prasekolah ini adalah masa awal kehidupan yang seharusnya
+            bebas dari tekanan. Ini bukan masa anak belajar dengan jadwal
+            terstruktur, juga bukan saat yang tepat menjejali anak dengan
+            sebanyak-banyaknya fakta. Anak tidak harus belajar dari peralatan
+            yang mahal, karena sarana pendidikan terbaik sudah Allah sediakan di
+            alam, baik itu di luar atau bahkan di dalam rumah sendiri.
+          </BenefitDescription>
+          <BenefitDescription>
+            Di kelas ini, saya akan menggunakan saran-saran Charlotte Mason
+            untuk pendidikan prasekolah yang praktis, mudah dilakukan, dan
+            menyenangkan. Saya akan tunjukkan bahwa anak usia ini tidak perlu
+            diajari aktivitas-aktivitas akademis yang membuat mereka dan para
+            ibu stress. Kita akan melangkah ke dunia pendidikan yang simpel,
+            klasik, dan menyenangkan tanpa mengorbankan kewarasan kita.
           </BenefitDescription>
           <BenefitTopContainer
-            title="Ikuti kelas dengan mudah"
-            description="Sarana kelas yang nyaman untuk diikuti dan dirujuk kembali di kemudian hari"
+            title="Kelas yang nyaman dan mudah"
+            description="Agar kelas ini nyaman diikuti dan mudah untuk dirujuk kembali di kemudian hari, maka saya sediakan:"
             image={
               <BenefitContainerImage
                 src="/images/planner-preview.jpeg"
@@ -51,22 +72,33 @@ export default function Home(): JSX.Element {
           >
             <BenefitItem
               icon={<FileInvoiceIcon />}
-              title="Handout berupa catatan bergambar"
+              title="Handout dan catatan bergambar (sketch note)"
             >
-              Catatan bergambar (Sketch Note) yang nyaman dibaca untuk dirujuk
-              kembali di kemudian hari.
+              Untuk membantu memahami materi yang saya sampaikan, saya sediakan
+              catatan visual yang menyenangkan yang saya tulis dan gambar
+              sendiri.
             </BenefitItem>
             <BenefitItem icon={<FileSignatureIcon />} title="Printable planner">
-              Lembar perencanaan yang dapat dicetak dan dikustomisasi sesuai
-              dengan kebutuhan anak dan keluarga.
+              Setelah memahami materi, kita akan mengeksplorasi planner untuk
+              membantumu menavigasi pendidikan dan kehidupan mereka sehari-hari.
+              Planner yang bisa dikostumisasi sesuai dengan kebutuhan kalian dan
+              anak.
             </BenefitItem>
             <BenefitItem icon={<FileVideoIcon />} title="Video rekaman">
-              File video rekaman dari kelas yang berlangsung.
+              Kelas akan saya rekam dan saya bagikan kepada kalian agar bisa
+              diakses seumur hidup
+            </BenefitItem>
+            <BenefitItem
+              icon={<WhatsAppIcon />}
+              title="Grup WhatsApp sementara"
+            >
+              Saya akan buatkan grup WhatsApp sementara selama 1 bulan, untuk sarana
+              berdiskusi jika ada hal-hal yang masih ingin ditanyakan.
             </BenefitItem>
           </BenefitTopContainer>
           <BenefitBottomContainer
             title="Interaksi dua arah"
-            description="Kelas interaktif dengan umpan balik langsung dari saya"
+            description="Saya akan ajak teman-teman untuk menyelami materi dengan:"
             image={
               <BenefitContainerImage
                 src="/images/interaction-preview.jpeg"
@@ -80,31 +112,49 @@ export default function Home(): JSX.Element {
               icon={<ChalkboardTeacherIcon />}
               title="Langsung dan intensif"
             >
-              Interaksi langsung di dalam kelas melalui Google Meet. Ukuran
-              kelas yang kecil memungkinkan proses diskusi yang mendalam di
-              dalam kelas.
+              Interaksi langsung di dalam kelas melalui Zoom. Ukuran kelas yang
+              kecil memungkinkan proses diskusi yang mendalam.
             </BenefitItem>
             <BenefitItem
               icon={<CommentsAltIcon />}
               title="Demonstrasi dan diskusi"
             >
-              Demonstrasi pengisian lembar perencanaan yang telah disediakan
-              disertai dengan diskusi dan tanya jawab.
+              Saya akan mendemonstrasikan pengisian lembar perencanaan yang
+              telah disediakan disertai dengan diskusi dan tanya jawab.
             </BenefitItem>
           </BenefitBottomContainer>
         </BenefitSection>
+        <Content title='Kisi-kisi materi'>
+          <Content.Item>Sekilas filosofi Charlotte Mason</Content.Item>
+          <Content.Item>Tugas utama orang tua</Content.Item>
+          <Content.Item>Prioritas pendidikan anak prasekolah (PAUD dan TK)</Content.Item>
+          <Content.Item>Kebutuhan fisik</Content.Item>
+          <Content.Item>Kunci kebiasaan baik</Content.Item>
+          <Content.Item>Bermain bebas dan mengasah 5 indera</Content.Item>
+          <Content.Item>Outdoor life</Content.Item>
+          <Content.Item>Membangun ikatan dengan alam</Content.Item>
+          <Content.Item>Buku dan cerita</Content.Item>
+          <Content.Item>Bahasa</Content.Item>
+          <Content.Item>Kehidupan spiritual </Content.Item>
+          <Content.Item>Seni</Content.Item>
+          <Content.Item>Tahap pramembaca</Content.Item>
+          <Content.Item>Berhitung</Content.Item>
+          <Content.Item>Menulis</Content.Item>
+          <Content.Item>Pengisian planner</Content.Item>
+        </Content>
         <Pricing title="Biaya kelas">
           <Pricing.Description>
-            Biaya yang perlu dibayarkan setelah terkonfirmasi sebagai peserta
+            Biaya baru dibayarkan setelah Anda terkonfirmasi sebagai peserta
             kelas
           </Pricing.Description>
           <Pricing.Included title="Biaya termasuk">
             <Pricing.Item>Handout berupa catatan bergambar</Pricing.Item>
             <Pricing.Item>Printable planner</Pricing.Item>
-            <Pricing.Item>Akses kelas online melalui Google Meet</Pricing.Item>
+            <Pricing.Item>Akses kelas online melalui Zoom</Pricing.Item>
             <Pricing.Item>Video rekaman kelas</Pricing.Item>
           </Pricing.Included>
         </Pricing>
+        <Timeline />
         <Faq title="FAQ (Tanya Jawab)">
           <Faq.Description>
             Tidak menemukan jawaban yang Anda cari? Hubungi saya{" "}
@@ -150,7 +200,7 @@ export default function Home(): JSX.Element {
             </div>
             <div>
               <Faq.Question>
-                Mengapa jumlah peserta hanya dibatasi sebanyak 20 orang?
+                Mengapa jumlah peserta hanya dibatasi sebanyak 30 orang?
               </Faq.Question>
               <Faq.Answer>
                 Supaya proses belajar bisa lebih fokus dan aktivitas tanya jawab
@@ -173,10 +223,7 @@ export default function Home(): JSX.Element {
         </Faq>
         <CtaSection>
           <CtaTitle>Tahun Prasekolahku</CtaTitle>
-          <CtaDescription>
-            Kursus membangun pondasi pendidikan prasekolah PAUD dan TK dengan
-            dasar-dasar filosofi Charlotte Mason
-          </CtaDescription>
+          <CtaDescription>Anda berminat?</CtaDescription>
           <CtaButton>Daftar sekarang</CtaButton>
         </CtaSection>
       </main>
