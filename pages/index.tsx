@@ -22,6 +22,7 @@ import { FileVideoIcon } from "../components/icons/file-video";
 import { WhatsAppIcon } from "../components/icons/whatsapp";
 import { Content } from "../components/sections/content";
 import { Pricing } from "../components/sections/pricing";
+import { Timeline } from "../components/sections/timeline";
 import { SEO } from "../components/seo";
 
 export default function Home(): JSX.Element {
@@ -153,6 +154,7 @@ export default function Home(): JSX.Element {
             <Pricing.Item>Video rekaman kelas</Pricing.Item>
           </Pricing.Included>
         </Pricing>
+        <Timeline />
         <Faq title="FAQ (Tanya Jawab)">
           <Faq.Description>
             Tidak menemukan jawaban yang Anda cari? Hubungi saya{" "}
