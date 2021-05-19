@@ -1,10 +1,13 @@
 import * as React from "react";
 import Image from "next/image";
+import { Alert } from "./alert";
 
 export const HeroSection = (): JSX.Element => {
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    window.open("https://rbagi.id/daftar", "_blank");
+    alert(
+      "Mohon maaf, pendaftaran sudah ditutup. Nantikan pengumuman berikutnya di Instagram @vika.riandini untuk gelombang pendaftaran berikutnya. Terima kasih."
+    );
   };
 
   const handleWatchVideo = () => {
@@ -59,6 +62,9 @@ export const HeroSection = (): JSX.Element => {
         </svg>
       </div>
       <div className="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          <Alert />
+        </div>
         <main className="mt-4 mx-auto max-w-7xl px-4 sm:mt-6 sm:px-6 lg:mt-8">
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
