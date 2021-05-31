@@ -7,7 +7,7 @@ const timeline = [
     date: '19—26 Mei',
     datetime: '2021-05-19/2021-05-26',
     icon: LoginIcon,
-    iconBackground: 'bg-blue-500',
+    iconBackground: 'bg-gray-500',
   },
   {
     batch: 1,
@@ -15,15 +15,23 @@ const timeline = [
     date: '27—28 Mei',
     datetime: '2021-05-27/2021-05-28',
     icon: BookOpenIcon,
-    iconBackground: 'bg-purple-500',
+    iconBackground: 'bg-gray-500',
   },
   {
     batch: 1,
-    content: 'Materi kelas',
-    date: '29—30 Mei',
-    datetime: '2021-05-29/2021-05-30',
+    content: 'Materi sesi 1',
+    date: '29 Mei',
+    datetime: '2021-05-29',
     icon: AcademicCapIcon,
-    iconBackground: 'bg-green-500',
+    iconBackground: 'bg-gray-500',
+  },
+  {
+    batch: 1,
+    content: 'Materi sesi 2',
+    date: '30 Mei',
+    datetime: '2021-05-30',
+    icon: AcademicCapIcon,
+    iconBackground: 'bg-gray-500',
   },
   {
     batch: 2,
@@ -32,6 +40,14 @@ const timeline = [
     datetime: '2021-06-01/2021-06-08',
     icon: LoginIcon,
     iconBackground: 'bg-blue-500',
+  },
+  {
+    batch: 1,
+    content: 'Materi sesi 3',
+    date: '5 Juni',
+    datetime: '2021-06-05',
+    icon: AcademicCapIcon,
+    iconBackground: 'bg-green-500',
   },
   {
     batch: 2,
@@ -43,9 +59,25 @@ const timeline = [
   },
   {
     batch: 2,
-    content: 'Materi kelas',
-    date: '12—13 Juni',
-    datetime: '2021-06-12/2021-06-13',
+    content: 'Materi sesi 1',
+    date: '12 Juni',
+    datetime: '2021-06-12',
+    icon: AcademicCapIcon,
+    iconBackground: 'bg-green-500',
+  },
+  {
+    batch: 2,
+    content: 'Materi sesi 2',
+    date: '13 Juni',
+    datetime: '2021-06-13',
+    icon: AcademicCapIcon,
+    iconBackground: 'bg-green-500',
+  },
+  {
+    batch: 2,
+    content: 'Materi sesi 3',
+    date: '19 Juni',
+    datetime: '2021-06-19',
     icon: AcademicCapIcon,
     iconBackground: 'bg-green-500',
   },
@@ -81,7 +113,7 @@ export const Timeline = (): JSX.Element => {
         <div className="flow-root">
           <ul className="-mb-8">
             {timeline.map((event, eventIdx) => (
-              <li key={event.content}>
+              <li key={eventIdx}>
                 <div className="relative pb-8">
                   {eventIdx !== timeline.length - 1 ? (
                     <span className="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true" />
