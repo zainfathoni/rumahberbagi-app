@@ -7,7 +7,7 @@ const timeline = [
     date: '19—26 Mei',
     datetime: '2021-05-19/2021-05-26',
     icon: LoginIcon,
-    iconBackground: 'bg-blue-500',
+    iconBackground: 'bg-gray-500',
   },
   {
     batch: 1,
@@ -15,7 +15,7 @@ const timeline = [
     date: '27—28 Mei',
     datetime: '2021-05-27/2021-05-28',
     icon: BookOpenIcon,
-    iconBackground: 'bg-purple-500',
+    iconBackground: 'bg-gray-500',
   },
   {
     batch: 1,
@@ -23,7 +23,7 @@ const timeline = [
     date: '29—30 Mei',
     datetime: '2021-05-29/2021-05-30',
     icon: AcademicCapIcon,
-    iconBackground: 'bg-green-500',
+    iconBackground: 'bg-gray-500',
   },
   {
     batch: 2,
