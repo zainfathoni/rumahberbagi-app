@@ -127,7 +127,7 @@ export default function Home(): JSX.Element {
         <Content title='Kisi-kisi materi'>
           <Content.Item>Sekilas filosofi Charlotte Mason</Content.Item>
           <Content.Item>Tugas utama orang tua</Content.Item>
-          <Content.Item>Prioritas pendidikan anak prasekolah (PAUD dan TK)</Content.Item>
+          <Content.Item>Prioritas pendidikan anak prasekolah (0-6 tahun)</Content.Item>
           <Content.Item>Kebutuhan fisik</Content.Item>
           <Content.Item>Kunci kebiasaan baik</Content.Item>
           <Content.Item>Bermain bebas dan mengasah 5 indera</Content.Item>
