@@ -193,7 +193,7 @@ export default function Home(): JSX.Element {
                 Berapa biaya kelas ini? Kapan saya harus membayarnya?
               </Faq.Question>
               <Faq.Answer>
-                Biaya kelas ini Rp 150.000,- yang dapat dibayarkan setelah Anda
+                Biaya kelas ini masih belum ditentukan, nantinya akan dapat dibayarkan setelah Anda
                 mendapatkan konfirmasi dari kami bahwa Anda mendapatkan slot
                 untuk bergabung di kelas ini.
               </Faq.Answer>

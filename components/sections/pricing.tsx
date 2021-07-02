@@ -101,7 +101,7 @@ export const Pricing = ({ title, children }: PricingProps): JSX.Element => {
                   <span className="ml-3 text-xl font-medium text-gray-500">
                     Rp
                   </span>
-                  <span>150.000</span>
+                  <span>XX0.000</span>
                   <span className="ml-3 text-xl font-medium text-gray-500">
                     ,-
                   </span>
