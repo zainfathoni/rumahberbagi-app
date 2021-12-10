@@ -91,8 +91,8 @@ export default function Home(): JSX.Element {
               icon={<WhatsAppIcon />}
               title="Grup WhatsApp sementara"
             >
-              Saya akan buatkan grup WhatsApp sementara selama 1 bulan, untuk sarana
-              berdiskusi jika ada hal-hal yang masih ingin ditanyakan.
+              Saya akan buatkan grup WhatsApp sementara selama 1 bulan, untuk
+              sarana berdiskusi jika ada hal-hal yang masih ingin ditanyakan.
             </BenefitItem>
           </BenefitTopContainer>
           <BenefitBottomContainer
@@ -123,10 +123,12 @@ export default function Home(): JSX.Element {
             </BenefitItem>
           </BenefitBottomContainer>
         </BenefitSection>
-        <Content title='Kisi-kisi materi'>
+        <Content title="Kisi-kisi materi">
           <Content.Item>Sekilas filosofi Charlotte Mason</Content.Item>
           <Content.Item>Tugas utama orang tua</Content.Item>
-          <Content.Item>Prioritas pendidikan anak prasekolah (0-6 tahun)</Content.Item>
+          <Content.Item>
+            Prioritas pendidikan anak prasekolah (0-6 tahun)
+          </Content.Item>
           <Content.Item>Kebutuhan fisik</Content.Item>
           <Content.Item>Kunci kebiasaan baik</Content.Item>
           <Content.Item>Bermain bebas dan mengasah 5 indera</Content.Item>
@@ -178,7 +180,9 @@ export default function Home(): JSX.Element {
               </Faq.Answer>
             </div>
             <div>
-              <Faq.Question>Berapa lama kelas ini akan berlangsung?</Faq.Question>
+              <Faq.Question>
+                Berapa lama kelas ini akan berlangsung?
+              </Faq.Question>
               <Faq.Answer>
                 Setidaknya akan ada dua pertemuan yang terdiri dari pembahasan
                 materi dan praktik pembuatan rencana pendidikan untuk anak
@@ -191,9 +195,9 @@ export default function Home(): JSX.Element {
                 Berapa biaya kelas ini? Kapan saya harus membayarnya?
               </Faq.Question>
               <Faq.Answer>
-                Biaya kelas ini masih belum ditentukan, nantinya akan dapat dibayarkan setelah Anda
-                mendapatkan konfirmasi dari kami bahwa Anda mendapatkan slot
-                untuk bergabung di kelas ini.
+                Biaya kelas ini masih belum ditentukan, nantinya akan dapat
+                dibayarkan setelah Anda mendapatkan konfirmasi dari kami bahwa
+                Anda mendapatkan slot untuk bergabung di kelas ini.
               </Faq.Answer>
             </div>
             <div>
@@ -224,6 +228,54 @@ export default function Home(): JSX.Element {
           <CtaDescription>Anda berminat?</CtaDescription>
           <CtaButton>Daftar sekarang</CtaButton>
         </CtaSection>
+        <Faq title="Kebijakan Privasi" id="privacy-policy">
+          <Faq.Description>
+            Kebijakan privasi dan keanggotaan kelas
+          </Faq.Description>
+          <Faq.Content>
+            <div>
+              <Faq.Question>
+                Mengapa data diri saya diperlukan saat pendaftaran?
+              </Faq.Question>
+              <Faq.Answer>
+                Kami membutuhkan data diri Anda untuk memastikan bahwa Anda bisa
+                kami hubungi untuk proses selanjutnya. Termasuk di antaranya
+                pembayaran biaya kelas dan pemberian akses terhadap kelas yang
+                kami sediakan.
+              </Faq.Answer>
+            </div>
+            <div>
+              <Faq.Question>Data apa saja yang erlu saya berikan?</Faq.Question>
+              <Faq.Answer>
+                Untuk keperluan yang telah kami jelaskan di atas, kami
+                membutuhkan data diri Anda seperti nama, alamat email, nomor
+                WhatsApp, dan akun Instagram Anda.
+              </Faq.Answer>
+            </div>
+            <div>
+              <Faq.Question>
+                Apakah saya bisa mengubah data diri saya?
+              </Faq.Question>
+              <Faq.Answer>
+                Tidak, kami tidak menyediakan fitur untuk mengubah data diri
+                Anda untuk saat ini. Akan tetapi, seiring dengan perkembangan
+                teknologi situs kami, kami akan menambahkan fitur untuk mengubah
+                data diri Anda. Untuk sementara waktu, apabila Anda menghendaki
+                perubahan data, Anda bisa menghubungi kami melalui akun
+                Instagram{" "}
+                <a
+                  href="https://www.instagram.com/vika.riandini/"
+                  className="font-medium text-indigo-600 hover:text-indigo-500"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  @vika.riandini
+                </a>
+                .
+              </Faq.Answer>
+            </div>
+          </Faq.Content>
+        </Faq>
       </main>
     </div>
   );

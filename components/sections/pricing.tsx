@@ -1,15 +1,15 @@
 import * as React from "react";
 
 type DescriptionProps = {
-  children: string
-}
+  children: string;
+};
 const Description = ({ children }: DescriptionProps): JSX.Element => (
   <p className="mt-4 text-xl text-gray-600">{children}</p>
 );
 
 type ItemProps = {
-  children: string
-}
+  children: string;
+};
 const Item = ({ children }: ItemProps): JSX.Element => (
   <li className="flex items-start lg:col-span-1">
     <div className="flex-shrink-0">
@@ -32,9 +32,9 @@ const Item = ({ children }: ItemProps): JSX.Element => (
 );
 
 type IncludedProps = {
-  title: string,
-  children: React.ReactNode // TODO: Allow Item type only
-}
+  title: string;
+  children: React.ReactNode; // TODO: Allow Item type only
+};
 const Included = ({ title, children }: IncludedProps): JSX.Element => (
   <div className="mt-8">
     <div className="flex items-center">
@@ -50,9 +50,9 @@ const Included = ({ title, children }: IncludedProps): JSX.Element => (
 );
 
 type PricingProps = {
-  title: string,
-  children: React.ReactNode // TODO: Allow Description and Included types only
-}
+  title: string;
+  children: React.ReactNode; // TODO: Allow Description and Included types only
+};
 export const Pricing = ({ title, children }: PricingProps): JSX.Element => {
   let description, included;
   React.Children.forEach(children, (child: React.ReactElement) => {
@@ -107,8 +107,11 @@ export const Pricing = ({ title, children }: PricingProps): JSX.Element => {
                   </span>
                 </div>
                 <p className="mt-4 text-sm">
-                  <a href="#" className="font-medium text-gray-500 underline">
-                    Kebijakan keanggotaan kelas
+                  <a
+                    href="#privacy-policy"
+                    className="font-medium text-gray-500 underline"
+                  >
+                    Kebijakan privasi
                   </a>
                 </p>
                 <div className="mt-6">
@@ -130,6 +133,6 @@ export const Pricing = ({ title, children }: PricingProps): JSX.Element => {
   );
 };
 
-Pricing.Description = Description
-Pricing.Item = Item
-Pricing.Included = Included
+Pricing.Description = Description;
+Pricing.Item = Item;
+Pricing.Included = Included;

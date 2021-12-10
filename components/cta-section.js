@@ -34,7 +34,7 @@ export const CtaSection = ({ children }) => (
           <img
             className="transform lg:-translate-x-20 lg:translate-y-20 rounded-md object-cover object-left-top"
             src="/images/foto-vika.jpeg"
-            alt="Contoh handout"
+            alt="Foto Vika"
           />
         </div>
       </div>
