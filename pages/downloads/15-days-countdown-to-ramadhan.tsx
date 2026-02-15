@@ -53,7 +53,7 @@ export default function Home(): JSX.Element {
             </p>
           </ArticleContent>
           <ArticleCTA
-            href="/files/15-days-countdown-to-ramadhan.pdf"
+            href="/api/files/15-days-countdown-to-ramadhan.pdf"
             download="15 Days Countdown to Ramadhan.pdf"
           >
             Download PDF
