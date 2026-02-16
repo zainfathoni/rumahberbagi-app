@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
+    "build": "node -p \"parseInt(process.versions.node.split('.')[0], 10)\" | awk '{if ($1 >= 17) exit 0; exit 1}' && NODE_OPTIONS=--openssl-legacy-provider next build || next build",
     "start": "next start",
     "lint": "eslint . --cache-location node_modules/.cache/eslint",
     "prepare": "husky install"
