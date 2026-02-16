@@ -99,7 +99,7 @@ export default function Home(): JSX.Element {
             <p>It’s my ramadhan gift for you, Moms!</p>
           </ArticleContent>
           <ArticleCTA
-            href="/api/files/rencana-menu-ramadhan.pdf"
+            href="https://raw.githubusercontent.com/zainfathoni/rumahberbagi-app/main/public/files/rencana-menu-ramadhan.pdf"
             download="Rencana Menu Ramadhan.pdf"
           >
             Download PDF
