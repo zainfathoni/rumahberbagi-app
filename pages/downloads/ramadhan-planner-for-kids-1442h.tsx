@@ -80,13 +80,13 @@ export default function Home(): JSX.Element {
             </p>
           </ArticleContent>
           <ArticleCTA
-            href="/api/files/ramadhan-planner-for-kids-1442h-id.pdf"
+            href="https://raw.githubusercontent.com/zainfathoni/rumahberbagi-app/main/public/files/ramadhan-planner-for-kids-1442h-id.pdf"
             download="Ramadhan Planner for Kids (Bahasa Indonesia).pdf"
           >
             Download PDF (Bahasa Indonesia)
           </ArticleCTA>
           <ArticleCTASecondary
-            href="/api/files/ramadhan-planner-for-kids-1442h-en.pdf"
+            href="https://raw.githubusercontent.com/zainfathoni/rumahberbagi-app/main/public/files/ramadhan-planner-for-kids-1442h-en.pdf"
             download="Ramadhan Planner for Kids (English).pdf"
           >
             Download PDF (Bahasa Inggris)
